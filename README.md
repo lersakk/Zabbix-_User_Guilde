@@ -1,4 +1,4 @@
-# Zabbix-_User_Guilde
+# ZabbixUserManual
 
 ## How To install
 * (1) Raspberry Pi Zero W
