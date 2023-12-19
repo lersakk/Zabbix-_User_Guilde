@@ -1,6 +1,6 @@
 # ZabbixUserManual
 
-https://i0.wp.com/arstech.net/wp-content/uploads/2018/02/Zabbix.png?fit=763%2C200&ssl=1
+![https://i0.wp.com/arstech.net/wp-content/uploads/2018/02/Zabbix.png?fit=763%2C200&ssl=1]
 
 ## Software Requirements
 *  Oracle VM VirtualBox(https://download.virtualbox.org/virtualbox/7.0.12/VirtualBox-7.0.12-159484-Win.exe)
