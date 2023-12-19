@@ -1,13 +1,10 @@
 # ZabbixUserManual
 
 ## Software Requirements
-*  Ubuntu (https://releases.ubuntu.com/22.04.3/ubuntu-22.04.3-live-server-amd64.iso?_ga=2.107990528.368670159.1702951341-699565016.1700194778)
-* (1) [SeeedStudio ReSpeaker 2-Mic Pi HAT](http://wiki.seeedstudio.com/ReSpeaker_2_Mics_Pi_HAT/)
-* (1) [Stereo speaker (3W, 8Ω) with JST connector](https://core-electronics.com.au/stereo-enclosed-speaker-3w-8.html)
-* (1) MicroSD card, 16GB, class 10 with SD card adapter
-* (1) Power adapter with micro USB cable
-* (4) [M2.5 Brass Standoffs](https://core-electronics.com.au/brass-m2-5-standoffs-for-pi-hats-black-plated-pack-of-2.html)
-* (4) M2.5 x 6 mm screws
+*  Oracle VM VirtualBox(https://download.virtualbox.org/virtualbox/7.0.12/VirtualBox-7.0.12-159484-Win.exe)
+*  Ubuntu Server(https://ubuntu.com/download/server)
+*  Zabbix Appliance(https://cdn.zabbix.com/zabbix/appliances/stable/6.4/6.4.10/zabbix_appliance-6.4.10-ovf.tar.gz)
+
 
 ## Install Operating System
 
