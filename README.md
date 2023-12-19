@@ -1,4 +1,6 @@
 # ZabbixUserManual
+![Talkiepi internals](![zabbix](https://github.com/lersakk/ZabbixUserManual/assets/136166133/88bc2f71-e80c-44c8-9823-e3c3f571750c)
+"Talkiepi internals")
 
 ## Software Requirements
 *  [Oracle VM VirtualBox](https://download.virtualbox.org/virtualbox/7.0.12/VirtualBox-7.0.12-159484-Win.exe)
