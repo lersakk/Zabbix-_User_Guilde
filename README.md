@@ -1,7 +1,7 @@
 # ZabbixUserManual
 
-## How To install
-* (1) Raspberry Pi Zero W
+## Software Requirements
+*  Ubuntu (https://releases.ubuntu.com/22.04.3/ubuntu-22.04.3-live-server-amd64.iso?_ga=2.107990528.368670159.1702951341-699565016.1700194778)
 * (1) [SeeedStudio ReSpeaker 2-Mic Pi HAT](http://wiki.seeedstudio.com/ReSpeaker_2_Mics_Pi_HAT/)
 * (1) [Stereo speaker (3W, 8Ω) with JST connector](https://core-electronics.com.au/stereo-enclosed-speaker-3w-8.html)
 * (1) MicroSD card, 16GB, class 10 with SD card adapter
