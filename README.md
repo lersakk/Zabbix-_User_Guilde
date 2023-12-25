@@ -233,8 +233,23 @@ Save and exit file (**ctrl+x**, followed by **y** and **enter**). And restart Za
 systemctl restart zabbix-server
 ~~~
 
-## ตัวอย่างการ สร้าง Host
+## ตัวอย่างการสร้าง Host
 
+เพิ่ม ข้อมูลอุปกรณ์ ลงใน File ด้านล่าง 
+~~~
+nano  /etc/snmp/snmptrapd.conf
+~~~
+ตัวอย่าง
+![Screenshot 2023-12-25 103107](https://github.com/lersakk/ZabbixUserManual/assets/136166133/ed2c9650-07e1-434f-8887-abc38ffc63eb)
+
+และทำการสร้าง Snmp บน อุปกรณืทีต้องการใช้ 
+![Screenshot 2023-12-25 103530](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5a48ebf0-8806-4b6c-bb07-6fab01e05008)
+
+และ Run snmpwalk
+~~~
+snmpwalk -e 0x80000009030000CAE55BB881 -v 3 -l authPriv -u sw1 -a MD5 -A  123456789 -x AES -X 123456789 192.168.56.122
+~~~
+และเข้าไปสร้าง Host ที่เว็บของ Zabbix 
 ![Screenshot 2023-12-25 102315](https://github.com/lersakk/ZabbixUserManual/assets/136166133/91c407db-aa76-4fcb-9bf2-8db416f4dfc9)
 
 
