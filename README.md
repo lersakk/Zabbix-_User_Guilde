@@ -272,7 +272,7 @@ Save and exit file (**ctrl+x**, followed by **y** and enter).
 ### Run snmpwalk
 
 ~~~
-snmpwalk -v3 -u sw1 -l authPriv -a sha -A 123456789 -x aes -X 123456789 192.168.56.122
+snmpwalk -v3 -u sw1 -l authPriv -a sha -A 123456789 -x aes -X 123456789 192.168.0.9
 ~~~
 
 ### เข้าไปสร้าง Host ที่เว็บของ Zabbix 
