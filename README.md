@@ -235,12 +235,12 @@ systemctl restart zabbix-server
 
 ## ตัวอย่างการสร้าง Host
 
-เพิ่ม ข้อมูลอุปกรณ์ ลงใน File ด้านล่าง 
+### เพิ่ม ข้อมูลอุปกรณ์ ลงใน File ด้านล่าง 
 ~~~
 nano  /etc/snmp/snmptrapd.conf
 ~~~
 
-ตัวอย่าง
+### ตัวอย่าง
 
 ~~~
 createUser -e 0x80000009030000CAE55BB881 sw1 SHA1 123456789 AES 123456789
@@ -249,11 +249,10 @@ authUser log,execute,net sw1 priv
 
 ![Screenshot 2023-12-25 103107](https://github.com/lersakk/ZabbixUserManual/assets/136166133/ed2c9650-07e1-434f-8887-abc38ffc63eb)
 
-และทำการสร้าง Snmp บน อุปกรณ์ทีต้องการใช้ 
+### และทำการสร้าง Snmp บน อุปกรณ์ทีต้องการใช้ 
 
-SNMPv3 Config.
- 
-// Command to Create
+### SNMPv3 Config.
+### Command to Create
 ~~~
 snmp-server group {GROUP-NAME} v3 priv
 ~~~
@@ -263,7 +262,7 @@ snmp-server user {USER-NAME} {GROUP-NAME} v3 auth sha {PASSWORD} priv aes 128 {P
 
 ![Screenshot 2023-12-25 103530](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5a48ebf0-8806-4b6c-bb07-6fab01e05008)
 
-และ Run snmpwalk
+### Run snmpwalk
 
 ~~~
 snmpwalk -e 0x80000009030000CAE55BB881 -v 3 -l authPriv -u sw1 -a SHA -A  123456789 -x AES -X 123456789 192.168.56.122
@@ -274,7 +273,7 @@ snmpwalk -e 0x80000009030000CAE55BB881 -v 3 -l authPriv -u sw1 -a SHA -A  123456
 ![Screenshot 2023-12-25 102315](https://github.com/lersakk/ZabbixUserManual/assets/136166133/91c407db-aa76-4fcb-9bf2-8db416f4dfc9)
 
 
-ทำการ Run Service ต่างๆอีกรอบ
+### ทำการ Run Service ต่างๆอีกรอบ
 
 ~~~
 systemctl restart snmptrapd
