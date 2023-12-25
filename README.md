@@ -268,6 +268,14 @@ authUser log,execute,net sw1 priv
 ![Screenshot 2023-12-25 103107](https://github.com/lersakk/ZabbixUserManual/assets/136166133/ed2c9650-07e1-434f-8887-abc38ffc63eb)
 Save and exit file (**ctrl+x**, followed by **y** and enter).
 
+### ทำการ Run Service ต่างๆอีกรอบ
+
+~~~
+systemctl restart snmptrapd
+~~~
+~~~
+systemctl enable snmptrapd
+~~~
 
 ### Run snmpwalk
 
@@ -280,14 +288,8 @@ snmpwalk -v3 -u sw1 -l authPriv -a sha -A 123456789 -x aes -X 123456789 192.168.
 ![Screenshot 2023-12-25 102315](https://github.com/lersakk/ZabbixUserManual/assets/136166133/91c407db-aa76-4fcb-9bf2-8db416f4dfc9)
 
 
-### ทำการ Run Service ต่างๆอีกรอบ
+### ทำการ Run Service zabbix-server ต่างๆอีกรอบ
 
-~~~
-systemctl restart snmptrapd
-~~~
-~~~
-systemctl enable snmptrapd
-~~~
 ~~~
 systemctl restart zabbix-server
 ~~~
