@@ -236,8 +236,7 @@ systemctl restart zabbix-server
 ## Example creating a Host
 
 ### ทำการสร้าง Snmp บน อุปกรณ์ทีต้องการใช้ 
-### SNMPv3 Config.
-### Command to Create
+ SNMPv3 Config Command to Create
 ~~~
 snmp-server group {GROUP-NAME} v3 priv
 ~~~
@@ -253,7 +252,7 @@ snmp-server user sw1 test v3 auth sha 123456789 priv aes 128 123456789
 ~~~
 ![Screenshot 2023-12-25 103530](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5a48ebf0-8806-4b6c-bb07-6fab01e05008)
 
-### เพิ่ม ข้อมูลอุปกรณ์ ลงใน File ด้านล่าง 
+### Add device  to the file below
 
 ~~~
 nano  /etc/snmp/snmptrapd.conf
@@ -267,6 +266,7 @@ authUser log,execute,net sw1 priv
 ~~~
 
 ![Screenshot 2023-12-25 103107](https://github.com/lersakk/ZabbixUserManual/assets/136166133/ed2c9650-07e1-434f-8887-abc38ffc63eb)
+Save and exit file (**ctrl+x**, followed by **y** and enter).
 
 
 ### Run snmpwalk
