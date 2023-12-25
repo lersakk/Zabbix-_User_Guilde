@@ -264,11 +264,16 @@ snmpwalk -e 0x80000009030000CAE55BB881 -v 3 -l authPriv -u sw1 -a MD5 -A  123456
 ![Screenshot 2023-12-25 102315](https://github.com/lersakk/ZabbixUserManual/assets/136166133/91c407db-aa76-4fcb-9bf2-8db416f4dfc9)
 
 
-
-
-
-
-
+ทำการ Run Service ต่างๆอีกรอบ
+~~~
+systemctl restart snmptrapd
+~~~
+~~~
+systemctl enable snmptrap
+~~~
+~~~
+systemctl restart zabbix-server
+~~~
 
 
 
