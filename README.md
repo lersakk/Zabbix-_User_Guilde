@@ -286,6 +286,12 @@ systemctl restart zabbix-server
 ~~~
 
 
+### ตัวอย่างการ ADD Templates ลงใน Host
+
+![Screenshot 2023-12-25 105315](https://github.com/lersakk/ZabbixUserManual/assets/136166133/7a6b1a48-6e38-435d-8013-3a962b3ef565)
+![Screenshot 2023-12-25 105351](https://github.com/lersakk/ZabbixUserManual/assets/136166133/651165fc-c88c-4006-9288-fd05d9efc516)
+
+
 
 
 
