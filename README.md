@@ -251,6 +251,16 @@ authUser log,execute,net sw1 priv
 
 และทำการสร้าง Snmp บน อุปกรณ์ทีต้องการใช้ 
 
+SNMPv3 Config.
+ 
+// Command to Create
+~~~
+snmp-server group {GROUP-NAME} v3 priv
+~~~
+~~~
+snmp-server user {USER-NAME} {GROUP-NAME} v3 auth sha {PASSWORD} priv aes 128 {PASSWORD}
+~~~
+
 ![Screenshot 2023-12-25 103530](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5a48ebf0-8806-4b6c-bb07-6fab01e05008)
 
 และ Run snmpwalk
