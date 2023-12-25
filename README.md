@@ -268,7 +268,7 @@ snmp-server user {USER-NAME} {GROUP-NAME} v3 auth sha {PASSWORD} priv aes 128 {P
 snmpwalk -e 0x80000009030000CAE55BB881 -v 3 -l authPriv -u sw1 -a SHA -A  123456789 -x AES -X 123456789 192.168.56.122
 ~~~
 
-และเข้าไปสร้าง Host ที่เว็บของ Zabbix 
+### เข้าไปสร้าง Host ที่เว็บของ Zabbix 
 
 ![Screenshot 2023-12-25 102315](https://github.com/lersakk/ZabbixUserManual/assets/136166133/91c407db-aa76-4fcb-9bf2-8db416f4dfc9)
 
