@@ -286,7 +286,7 @@ snmpwalk -v3 -u sw1 -l authPriv -a sha -A 123456789 -x aes -X 123456789 192.168.
 systemctl restart snmptrapd
 ~~~
 ~~~
-systemctl enable snmptrap
+systemctl enable snmptrapd
 ~~~
 ~~~
 systemctl restart zabbix-server
