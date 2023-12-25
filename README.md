@@ -233,24 +233,9 @@ Save and exit file (**ctrl+x**, followed by **y** and **enter**). And restart Za
 systemctl restart zabbix-server
 ~~~
 
-## ตัวอย่างการสร้าง Host
+## Example creating a Host
 
-### เพิ่ม ข้อมูลอุปกรณ์ ลงใน File ด้านล่าง 
-~~~
-nano  /etc/snmp/snmptrapd.conf
-~~~
-
-### ตัวอย่าง
-
-~~~
-createUser -e 0x80000009030000CAE55BB881 sw1 SHA1 123456789 AES 123456789
-authUser log,execute,net sw1 priv
-~~~
-
-![Screenshot 2023-12-25 103107](https://github.com/lersakk/ZabbixUserManual/assets/136166133/ed2c9650-07e1-434f-8887-abc38ffc63eb)
-
-### และทำการสร้าง Snmp บน อุปกรณ์ทีต้องการใช้ 
-
+### ทำการสร้าง Snmp บน อุปกรณ์ทีต้องการใช้ 
 ### SNMPv3 Config.
 ### Command to Create
 ~~~
@@ -259,6 +244,30 @@ snmp-server group {GROUP-NAME} v3 priv
 ~~~
 snmp-server user {USER-NAME} {GROUP-NAME} v3 auth sha {PASSWORD} priv aes 128 {PASSWORD}
 ~~~
+### Example:
+~~~
+snmp-server group test v3 priv
+~~~
+~~~
+snmp-server user sw1 test v3 auth sha 123456789 priv aes 128 123456789
+~~~
+
+
+### เพิ่ม ข้อมูลอุปกรณ์ ลงใน File ด้านล่าง 
+
+~~~
+nano  /etc/snmp/snmptrapd.conf
+~~~
+
+### Example:
+
+~~~
+createUser -e 0x80000009030000CAE55BB881 sw1 SHA1 123456789 AES 123456789
+authUser log,execute,net sw1 priv
+~~~
+
+![Screenshot 2023-12-25 103107](https://github.com/lersakk/ZabbixUserManual/assets/136166133/ed2c9650-07e1-434f-8887-abc38ffc63eb)
+
 
 ![Screenshot 2023-12-25 103530](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5a48ebf0-8806-4b6c-bb07-6fab01e05008)
 
