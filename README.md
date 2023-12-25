@@ -233,6 +233,9 @@ Save and exit file (**ctrl+x**, followed by **y** and **enter**). And restart Za
 systemctl restart zabbix-server
 ~~~
 
+## ตัวอย่างการ สร้าง Host
+
+![Uploading Screenshot 2023-12-25 102315.png…]()
 
 
 
