@@ -249,7 +249,7 @@ authUser log,execute,net sw1 priv
 
 ![Screenshot 2023-12-25 103107](https://github.com/lersakk/ZabbixUserManual/assets/136166133/ed2c9650-07e1-434f-8887-abc38ffc63eb)
 
-และทำการสร้าง Snmp บน อุปกรณืทีต้องการใช้ 
+และทำการสร้าง Snmp บน อุปกรณ์ทีต้องการใช้ 
 
 ![Screenshot 2023-12-25 103530](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5a48ebf0-8806-4b6c-bb07-6fab01e05008)
 
