@@ -235,7 +235,8 @@ systemctl restart zabbix-server
 
 ## ตัวอย่างการ สร้าง Host
 
-![Uploading Screenshot 2023-12-25 102315.png…]()
+![Screenshot 2023-12-25 102315](https://github.com/lersakk/ZabbixUserManual/assets/136166133/91c407db-aa76-4fcb-9bf2-8db416f4dfc9)
+
 
 
 
