@@ -241,6 +241,12 @@ nano  /etc/snmp/snmptrapd.conf
 ~~~
 
 ตัวอย่าง
+
+~~~
+createUser -e 0x80000009030000CAE55BB881 sw1 SHA1 123456789 AES 123456789
+authUser log,execute,net sw1 priv
+~~~
+
 ![Screenshot 2023-12-25 103107](https://github.com/lersakk/ZabbixUserManual/assets/136166133/ed2c9650-07e1-434f-8887-abc38ffc63eb)
 
 และทำการสร้าง Snmp บน อุปกรณืทีต้องการใช้ 
