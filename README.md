@@ -256,7 +256,7 @@ authUser log,execute,net sw1 priv
 และ Run snmpwalk
 
 ~~~
-snmpwalk -e 0x80000009030000CAE55BB881 -v 3 -l authPriv -u sw1 -a MD5 -A  123456789 -x AES -X 123456789 192.168.56.122
+snmpwalk -e 0x80000009030000CAE55BB881 -v 3 -l authPriv -u sw1 -a SHA -A  123456789 -x AES -X 123456789 192.168.56.122
 ~~~
 
 และเข้าไปสร้าง Host ที่เว็บของ Zabbix 
@@ -265,6 +265,7 @@ snmpwalk -e 0x80000009030000CAE55BB881 -v 3 -l authPriv -u sw1 -a MD5 -A  123456
 
 
 ทำการ Run Service ต่างๆอีกรอบ
+
 ~~~
 systemctl restart snmptrapd
 ~~~
