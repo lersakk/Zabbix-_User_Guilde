@@ -1,14 +1,22 @@
-# ZabbixUserManual
+# Software Requirements
 ![zabbix](https://github.com/lersakk/ZabbixUserManual/assets/136166133/73df118a-760a-41a8-b155-0ead08eb73a0)
 
+## Oracle VM VirtualBox
+Click Here -> [Oracle VM VirtualBox](https://download.virtualbox.org/virtualbox/7.0.12/VirtualBox-7.0.12-159484-Win.exe) For Download
 
-## Software Requirements
-*  [Oracle VM VirtualBox](https://download.virtualbox.org/virtualbox/7.0.12/VirtualBox-7.0.12-159484-Win.exe)
-*  [Ubuntu Server](https://ubuntu.com/download/server)
-*  [Zabbix Appliance](https://cdn.zabbix.com/zabbix/appliances/stable/6.4/6.4.10/zabbix_appliance-6.4.10-ovf.tar.gz)
+### Step to Install Oracle VM VirtualBox
 
-  
-  
+## Ubuntu Server
+Click Here -> [Ubuntu Server](https://ubuntu.com/download/server) For Download
+
+### Step to Install Ubuntu Server
+
+## Zabbix (Docker)
+Click Here -> [Zabbix Appliance](https://cdn.zabbix.com/zabbix/appliances/stable/6.4/6.4.10/zabbix_appliance-6.4.10-ovf.tar.gz) For Download
+
+### Step to Install Zabbix (Docker Compose)
+
+
 # How To Install 
 ## Step 1: Install SNMP packages
 First, we need to install a collection of packages associated with the SNMP protocol and other:
