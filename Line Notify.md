@@ -126,7 +126,7 @@ Send only to เลือกเป็น Media types ที่เราส้า
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/d3a70515-76ae-4b70-b90e-8fe373cbd763)
 
 
-เป็นตัวอย่างการแจ้งเตือนจากทั้ง Email และ LINE notify 
+## ตัวอย่างการแจ้งเตือนจากทั้ง Email และ LINE notify 
 
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/b7f022a7-d891-4cf9-8b5f-a30277546cc6)
