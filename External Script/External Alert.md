@@ -50,7 +50,6 @@ formatted_message="Subject: $subject\n\n$message"
 # Send the message via Line Notify
 curl -X POST -H "Authorization: Bearer $send_to" \
      -F "message=$formatted_message" https://notify-api.line.me/api/notify
-
 ~~~
 
 __Step 4 กดปุ่ม “Ctrl+x”  และ พิมพ์ “Y” เพื่อบันทึกไฟล์__
@@ -85,39 +84,46 @@ __Step 3 ทำการกด Add__
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/f7e30f01-af62-45df-a62f-7116d5d2bb2d" width="100%">
 
+<br><br>
 
-## 2. การสร้าง Line Notify
+## 3. การสร้าง Line Notify
 
-ไปที่  [Line-Notify](https://notify-bot.line.me/)  กด Scan QR code จากหน้าเว็บไซต์บน application Line เพื่อเพิ่ม Line notify มาเป็นเพื่อนเรา
+__Step 1 ไปที่ [https://notify-bot.line.me/](https://notify-bot.line.me/) เพื่อทำการ Generate Token__
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/138e3c93-13dd-4667-be87-dd044f596767)
+__Step 2 ทำการแสกน QR Code จากหน้าเว็บไซต์บน Application Line เพื่อทำการเพิ่มเพื่อนกับ Line notify__
 
+__Step 3 ทำการแสกน QR Code จากหน้าเว็บไซต์บน Application Line เพื่อทำการเพิ่มเพื่อนกับ Line notify__
 
-จากนั้น  Login และกด Drop down list ลงมาจากชื่อ Line ของเรา เลือก My page
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/138e3c93-13dd-4667-be87-dd044f596767" width="100%">
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/b048188b-8681-48f4-a3ed-a609810f48d2)
+__Step 4 ทำการ Login และกดที่ Drop down จากนั้นเลือก My page__
 
+<br>
 
-ไปที่  Generate  token
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/b048188b-8681-48f4-a3ed-a609810f48d2" width="100%">
 
+__Step 5 ไปที่  Generate  token__
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/36239c2f-0fad-442b-88d0-2bd3c746bd37)
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/36239c2f-0fad-442b-88d0-2bd3c746bd37" width="100%">
 
-ใส่ชื่อของ Token โดยชื่อนี้จะไปปรากฏอยู่หน้าการแจ้งเตือนเช่นใส่ Test Notify: ชื่อนี้จะไปปรากฏหน้าข้อความโดยข้อความมีลักษณะเป็น Test Notify::ตามด้วย message จากระบบที่ส่งมา หลังจากนั้น ทำการเลือก chat ที่ต้องการส่งการแจ้งเตือนไป และ กด Generate  token
+__Step 6 ใส่ชื่อของ Token และทำการใส่ชื่อของ Token__
 
+_ชื่อดังกล่าวจะไปปรากฏหน้าข้อความโดยข้อความมีลักษณะเป็น Test Notify::ตามด้วย message จากระบบที่ส่งมา_
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/715979c4-4f46-4672-9ef0-eaf6f3b29162)
+__Step 6 (ต่อ) หลังจากนั้นทำการเลือก ห้อง Chat ที่ต้องการส่งการแจ้งเตือน และทำการกด Generate  Token__
 
-กด Copy token ที่ได้มา
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/715979c4-4f46-4672-9ef0-eaf6f3b29162" width="50%">
 
+__Step 7 ทำการ Copy Token ที่ได้มา__
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/4772117a-20d0-4faa-b80e-f83a2218358c)
 
 
-และไปยัง application Line ของเราเพื่อทำการเพิ่ม Line notify เข้าไปยังแชทกลุ่มที่ทำการเลือกไว้ตอน Generate  token
-
+__Step 8 ไปยัง Application Line เพื่อทำการเพิ่ม Line notify เข้าไปยังแชทกลุ่มที่ทำการเลือกไว้ในขั้นตอนการ Generate Token__
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/46b4228b-5e69-40fc-82fb-03382ac0816c)
+
+
 
 หลังจากนั้นกำหนดให้ส่งไปที่ Line  
 โดยไปที่ Users > Users > Media > add
