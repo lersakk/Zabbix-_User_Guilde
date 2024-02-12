@@ -75,3 +75,42 @@ sudo apt install snmp
 ~~~
 snmpwalk -v3 -u {USER-NAME} -l authPriv -a sha -A {PASSWORD} -x aes -X {PASSWORD} {IP-ADDRESS-HOST}
 ~~~
+
+
+### Create Template for snmp traps
+
+สร้าง Templates เข้าที่ Data collection > Template > Create template
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/d3fa01b6-d0d5-4769-a46b-78b225453950)
+
+ตั้งชื่อ Template และเลือก Template groups
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/191dc9d4-7814-4d05-ad20-e1c1d2cf9c14)
+
+
+เพิ่ม Item ใน Templates ให้เลือกคำว่า item 
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/2f37e176-43de-450f-b33f-f8199960893a)
+
+เลือก Create item เพื่อสร้าง item
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/2b1f4db5-6133-4dea-afdf-7512f9e4667f)
+
+ตั้งชื่อ กำหนด Key และตั้งค่าต่างๆตามต้องการ และ กด Add
+
+-------------------ตัวอย่าง-----------------------
+Name: Snmp traps
+
+Key : snmptrap[]
+
+log time format : yyyyMMdd.hhmmss
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/81249e4d-7636-494d-92be-d03d62035045)
+
+
+
+
+
+
+
+
