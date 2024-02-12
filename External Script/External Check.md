@@ -89,7 +89,7 @@ Template name : External Check
 Template groups : Template groups (Group ที่ต้องการ) 
 ~~~
 
-<img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/3ee97e3e-193f-4034-b18a-64f1adb4c7e5" width="100%">
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/70b949d6-61cb-4133-b435-d6ab2594a3cc" width="100%">
 
 __.__
 
