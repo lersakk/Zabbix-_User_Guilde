@@ -112,7 +112,7 @@ Swicth1:Gi0/1 <> Fa0/1(Router)
 
 ~~~
 
-ข้อความข้างต้นเป็นเพียงตัวอย่างเท่านั้น คุณสามารถเปลี่ยน Interface ที่ต้องการได้จากการนำ Key มาใส่ โดยดูจาก [KEY](https://github.com/lersakk/ZabbixUserManual/edit/main/Triger%20Bandwith.md#:~:text=52-,53,-54)
+ข้อความข้างต้นเป็นเพียงตัวอย่างเท่านั้น คุณสามารถเปลี่ยน Interface ที่ต้องการได้จากการนำ Key มาใส่ โดยดูจาก [KEY]([https://github.com/lersakk/ZabbixUserManual/edit/main/Triger%20Bandwith.md#:~:text=52-,53,-54](https://github.com/lersakk/ZabbixUserManual/blob/main/Triger%20Bandwith.md#%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%94%E0%B8%B9-key-%E0%B8%82%E0%B8%AD%E0%B8%87-interface-%E0%B8%82%E0%B8%AD%E0%B8%87-host-%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3)https://github.com/lersakk/ZabbixUserManual/blob/main/Triger%20Bandwith.md#%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%94%E0%B8%B9-key-%E0%B8%82%E0%B8%AD%E0%B8%87-interface-%E0%B8%82%E0%B8%AD%E0%B8%87-host-%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3)
 
 
 
