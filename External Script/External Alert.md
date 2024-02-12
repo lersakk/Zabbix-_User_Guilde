@@ -3,27 +3,36 @@
 <p>------------------------------- External Alert ------------------------------</p>
 <p>------------------------------------------------------------------------------</p>
 </h1> </strong>
-<br>
 
 <h1>ตัวอย่าง การตั้งค่าการแจ้งเตือนไปยัง Line Notify</h1>
 
-การสร้างไฟล์ Script สำหรับส่งการแจ้งเตือนไปยัง Line Notify โดยไปที่โฟลเดอร์ของ External Script
-##### Command : 
+## 1. การสร้าง File ที่ Directory ของ External Script
+
+__Step 1 ใช้คำสั่งเพื่อเข้าไปที่ Directory ที่เก็บไฟล์ Script ภายนอก__
+
+__Command :__
+
 ~~~
-cd  zabbix-docker/zbx_env/usr/lib/zabbix/alertscripts
+cd zabbix-docker/zbx_env/usr/lib/zabbix/externalscripts/
 ~~~
 
-จากนั้นทำการสร้างไฟล์ Script ขึ้นมาด้วยคำสั่ง nano [FILE-NAME] ในที่นี่ใช้ชื่อเป็น Line-notify
-##### Command : 
+__Step 2 ใช้คำสั่งเพื่อสร้างไฟล์ Script__
+
+__Command :__
+
+~~~
+sudo touch line-notify
+~~~
+
+__Step 3 ทำการเพิ่มข้อมูลบนไฟล์โดยการใช้คำสั่ง nano [FILE-NAME] ในที่นี่ใช้ชื่อเป็น Line-notify__
+
+__Command :__
+
 ~~~
 sudo nano line-notify
 ~~~
 
-
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/1adb47c4-bf9d-49a3-95ea-5715b9a37aab)
-
-จากนั้นให้พิมพ์ script ตามด้านล่างนี้
-
+__Script :__
 ~~~
 #!/bin/bash
  
@@ -44,25 +53,40 @@ curl -X POST -H "Authorization: Bearer $send_to" \
 
 ~~~
 
-จากนั้นให้ใส่คำสั่ง ด้านล่าง เพื่อให้ สิทธิ์กับไฟล์ script
+__Step 4 กดปุ่ม “Ctrl+x”  และ พิมพ์ “Y” เพื่อบันทึกไฟล์__
+
+__Step 5 ใช้คำสั่งเพื่อให้สิทธ์แก่ไฟล์ Script__
+
+__Command :__
 
 ~~~
-sudo chmod +x line-notify
+sudo chmod +X line-notify
 ~~~
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/58595472-438a-4007-9eee-0e2f9e2311b5)
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/58595472-438a-4007-9eee-0e2f9e2311b5" width="100%">
+
+<br>
+
+## 2. สร้าง Media 
+_ในการสร้าง Media เพื่อทำการแจ้งเตือนผ่าน Line Notify จำเป็นที่จะต้องเพิ่มก่อนที่จะสร้างการแจ้งเตือน สามารถทำได้ดังนี้_
+
+__Step 1 ไปที่ Alerts >Media types > Create media type__
+
+__Step 2 จากนั้นกรอกข้อมูลตามรูปด้านล่าง ใน Script parameters ทั้ง 3 ตัวที่จะต้องใส่ไปมีดังนี้__
+
+~~~
+Value :
+   {ALERT.SENDTO}
+   {ALERT.SUBJECT}
+   {ALERT.MESSAGE}
+~~~
+
+__Step 3 ทำการกด Add__ 
+
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/f7e30f01-af62-45df-a62f-7116d5d2bb2d" width="100%">
 
 
-## สร้าง Media 
-
-การสร้าง Media ขึ้นมาให้ไปที่ Alerts >Media types > Create media type 
-จากนั้นกรอกข้อมูลตามรูปด้านล่าง ใน Script parameters ทั้ง 3 ตัวที่จะต้องใส่ไปมีดังนี้
-{ALERT.SENDTO},{ALERT.SUBJECT},{ALERT.MESSAGE}
-จากนั้นก็กด Add 
-
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/f7e30f01-af62-45df-a62f-7116d5d2bb2d)
-
-## สร้าง Line Notify
+## 2. การสร้าง Line Notify
 
 ไปที่  [Line-Notify](https://notify-bot.line.me/)  กด Scan QR code จากหน้าเว็บไซต์บน application Line เพื่อเพิ่ม Line notify มาเป็นเพื่อนเรา
 
@@ -102,7 +126,7 @@ sudo chmod +x line-notify
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/82f8f40e-88f7-421b-8d02-5a10e3a34e07)
 
-## ADD Actions Triger  
+## 3. ADD Actions Triger  
 
 ไปที่ Alerts > Actions > Trigger actions > Create action
 
