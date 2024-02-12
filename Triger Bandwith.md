@@ -112,7 +112,7 @@ Swicth1:Gi0/1 <> Fa0/1(Router)
 
 ~~~
 
-ข้อความข้างต้นเป็นเพียงตัวอย่างเท่านั้น คุณสามารถเปลี่ยน Interface ที่ต้องการได้จากการนำ Key มาใส่ โดยดูจาก [KEY](## การดู key ของ Interface ของ Host ที่ต้องการ)
+ข้อความข้างต้นเป็นเพียงตัวอย่างเท่านั้น คุณสามารถเปลี่ยน Interface ที่ต้องการได้จากการนำ Key มาใส่ โดยดูจาก [KEY]([## การดู key ของ Interface ของ Host ที่ต้องการ](https://github.com/lersakk/ZabbixUserManual/blob/fafeff9be03c94c8dd4d316716b228c7be4dabbe/Triger%20Bandwith.md?plain=1#L53)https://github.com/lersakk/ZabbixUserManual/blob/fafeff9be03c94c8dd4d316716b228c7be4dabbe/Triger%20Bandwith.md?plain=1#L53)
 
 
 
