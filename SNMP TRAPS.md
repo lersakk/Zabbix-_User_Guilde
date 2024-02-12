@@ -61,5 +61,16 @@ authUser log,execute,net {USER-NAME} priv
 
 ###  การติดตั้ง snmp และ Run snmpwalk
 
+เริ่มต้นด้วยการติดตั้ง snmp 
 
+~~~
+sudo apt install snmp
+~~~
 
+จากนั้น Run  snmpwalk 
+
+~~~
+snmpwalk -v3 -u {USER-NAME} -l authPriv -a sha -A {PASSWORD} -x aes -X 
+{PASSWORD} {IP-ADDRESS-HOST}
+
+~~~
