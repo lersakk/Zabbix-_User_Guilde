@@ -106,6 +106,9 @@ Key : snmptrap[]
 
 log time format : yyyyMMdd.hhmmss
 
+-----------------------------------------------
+
+
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/81249e4d-7636-494d-92be-d03d62035045)
 
 
