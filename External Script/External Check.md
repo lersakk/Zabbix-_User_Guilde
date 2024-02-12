@@ -1,23 +1,28 @@
-# External Check
+<strong> <h1>
+<p>------------------------------------------------------------------------------</p>
+<p>----------------------------- DNS QUERY TIME ----------------------------</p>
+<p>------------------------------------------------------------------------------</p>
+</h1> </strong>
+<br>
 
-# DNS_QUERY_TIME
-ตัวอย่างการทำ External Script เพื่อ Monitor ค่าประสิทธิภาพในการ Query ข้อมูลชื่อโดเมนบนระบบ DNS Server
+__ตัวอย่างการทำ External Script เพื่อ Monitor ค่าประสิทธิภาพในการ Query ข้อมูลชื่อโดเมนบนระบบ DNS Server__
 
-การสร้าง File ของ Directory Script
+## 1. การสร้าง File ของ Directory Script
 
-ใช้คำสั่งเพื่อเข้าไปที่ Directory ที่เก็บไฟล์ Script ภายนอก
-##### Command : 
+__Step 1 ใช้คำสั่งเพื่อเข้าไปที่ Directory ที่เก็บไฟล์ Script ภายนอก__
+__Command :__
 ~~~
 cd zabbix-docker/zbx_env/usr/lib/zabbix/externalscripts/
 ~~~
 
-ใช้คำสั่งเพื่อสร้างไฟล์ Script
-##### Command : 
+__Step 2 ใช้คำสั่งเพื่อสร้างไฟล์ Script__
+__Command :__
 ~~~
 nano dns_query_time.sh
 ~~~
 
-3)	ทำการเพิ่มข้อมูลบนไฟล์ ดังภาพ
+__Step 3 ทำการเพิ่มข้อมูลบนไฟล์ ดังนี้__
+__Script :__
 ~~~
 #!/bin/bash
 
@@ -30,3 +35,70 @@ query_time=$(echo "$dig_output" | grep "Query time:" | awk '{print $4}')
 # Print the query time
 echo "$query_time"
 ~~~
+
+__Step 4 กดปุ่ม “Ctrl+x”  และ พิมพ์ “Y” เพื่อบันทึกไฟล์__
+
+__ใช้คำสั่งเพื่อให้สิทธ์แก่ไฟล์ Script__
+__Command :__
+~~~
+sudo chmod 755 dns_query_time.sh
+~~~
+
+## 2. การติดตั้งแพคเกจ dnsutils บน Container
+_ในการ Monitor ค่าประสิทธิภาพในการ Query ข้อมูลชื่อโดเมนบนระบบ DNS Server บน Container ของ Docker จำเป็นที่จะต้องใช้คำสั่ง dig และจะเป็นต้องมีแพคเกจ dnsutils_
+
+__Step 1 ใช้คำสั่งเพื่อแสดง List ของ Container ที่ทำงานอยู่__
+__Command :__
+~~~
+sudo docker ps
+~~~
+
+__Step 2 ทำการ Execute เข้าไปใน Container__
+__Command :__
+~~~
+sudo docker exec -u root -ti [CONTAINER-ID] bash
+~~~
+
+__Step 3 หลังจากเข้ามาใน Container ใช้คำสั่งเพื่อทำการติดตั้ง dnsutils และรอการติดตั้งจนเสร็จสมบูรณ์__
+__Command :__
+~~~
+apt-get update
+~~~
+
+__Command :__
+~~~
+apt install dnsutils 
+~~~
+
+## 3. การกำหนดค่าการแสดงผลบน Zabbix Web Interface
+
+__Step 1 ไปที่หน้า Zabbix Web Interface เพื่อกำหนดค่า__
+
+__Step 2 ไปที่แท็บ Data collection -> Templates -> Create Templates และใส่ข้อมูลดังนี้__
+~~~
+Template name : External Check
+Template groups : Template groups (Group ที่ต้องการ) 
+~~~
+
+__Step 3 ไปที่ Template ที่สร้าง -> ไปที่ Create Item ใส่ข้อมูลดังนี้__
+~~~
+Name : DNS Query Time
+Type : Zabbix agent
+Key : dns_query_time.sh (ชื่อไฟล์ที่ทำการสร้าง)
+Type of information : Numeric (float)
+Update interval : 1m
+~~~
+
+__Step 4 ทำการกด “Add”__
+__Step 5 ทำการเพิ่ม Template เข้าไปที่ Host เพื่อทำการ Monitor__
+
+
+
+
+
+
+
+
+
+
+
