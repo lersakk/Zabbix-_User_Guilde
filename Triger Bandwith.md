@@ -70,7 +70,7 @@
 
 
 
-ตัวอย่างการ Create trigger 
+ตัวอย่างการ Create trigger  
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5c786ef8-f225-4c84-b0f9-0f181d2a6bc7)
 
@@ -87,6 +87,11 @@
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/2e0db9c1-e582-4276-b301-289fe75bb464)
 
+
+ดูที่ Collumn Link indicators > Add
+
+เลือก Host ที่เราต้องการ และเลือก Trigger ที่เราได้สร้างไว้ จากนั้น  กด Select และกด Apply และกด Update ที่หน้า Network maps
+ ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/6c3ef012-ad83-42d8-8b59-55fbb4bb77d3)
 
 
 
