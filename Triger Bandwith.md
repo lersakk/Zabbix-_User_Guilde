@@ -47,6 +47,14 @@
 
 และกด Add เพื่อเพิ่ม Trigger 
 
+## การดูว่า key ของ Interface ของ Host ที่ต้องการ
+
+เข้าไปที่ Monitoring > Latest data 
+ทำการ Filter โดย เลือก  Host ที่ต้องการและกด Show details และกด Apply
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/d722785a-dc53-4f1c-8cb3-9d8d02e3e001)
+
+
 ตัวอย่างการ Create trigger 
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5c786ef8-f225-4c84-b0f9-0f181d2a6bc7)
