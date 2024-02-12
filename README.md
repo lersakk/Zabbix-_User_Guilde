@@ -17,3 +17,5 @@
 
 
 ## Template recommend
+#### [Ping Smoke](https://github.com/komeiy/Smokeping_Zabbix)
+
