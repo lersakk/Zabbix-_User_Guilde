@@ -47,12 +47,22 @@
 
 และกด Add เพื่อเพิ่ม Trigger 
 
-## การดูว่า key ของ Interface ของ Host ที่ต้องการ
+## การดู key ของ Interface ของ Host ที่ต้องการ
 
 เข้าไปที่ Monitoring > Latest data 
 ทำการ Filter โดย เลือก  Host ที่ต้องการและกด Show details และกด Apply
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/d722785a-dc53-4f1c-8cb3-9d8d02e3e001)
+
+จากนั้นเลือก Interface ที่ตองการจะดูที่ TAG VALUES > Interface 
+ในที่นี้ จากเลือก G0/1
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/06542edc-f316-4640-a721-738232a1da3a)
+
+
+เราจะสามารถรู้ได้ว่า Key ของ Interface ที่ต้องการคืออะไร จากตัวหนังสือสีเขียวดังรูปด้านล่าง 
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/80e179c3-48c0-404e-a69a-0fc26dc5172f)
+
 
 
 ตัวอย่างการ Create trigger 
