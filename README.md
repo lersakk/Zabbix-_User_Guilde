@@ -3,7 +3,7 @@
 
 ## Installation
 
-### [Software Requirements](https://github.com/lersakk/ZabbixUserManual/blob/main/Software%20Requirements.md)  
+### [Software Requirements](https://github.com/lersakk/ZabbixUserManual/blob/main/1.Software%20Requirements.md)  
 
 ### [How To Install](https://github.com/lersakk/ZabbixUserManual/blob/main/How%20to%20install.md)
 
