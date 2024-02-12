@@ -37,7 +37,7 @@ Click Here -> [Zabbix Appliance](https://cdn.zabbix.com/zabbix/appliances/stable
 
 
 
-# How To Install 
+# [How To Install](https://github.com/lersakk/ZabbixUserManual/blob/main/How%20to%20install.md) 
 ## Step 1: Install SNMP packages
 First, we need to install a collection of packages associated with the SNMP protocol and other:
 
