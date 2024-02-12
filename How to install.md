@@ -1,5 +1,5 @@
 # Step 1 Install Docker
-✨
+
 คุณสามารถนำคำสั่งด้านล่างไปวางได้เลย
 
 ~~~
@@ -21,6 +21,17 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo service docker start
 
 ~~~
+
+# Step 2 Git Clone Zabbix Docker 
+
+ใช้คำสั่ง ด้านล่างเพื่อ Git Clone Zabbix มาไว้
+
+~~~
+
+git clone https://github.com/zabbix/zabbix-docker.git
+
+~~~
+
 
 
 
