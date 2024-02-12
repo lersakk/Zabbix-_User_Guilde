@@ -16,4 +16,4 @@
 #### [Add MIB](https://github.com/lersakk/ZabbixUserManual/blob/main/Add%20mib.md)
 
 
-
+## Template recommend
