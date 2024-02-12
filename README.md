@@ -1,6 +1,7 @@
 # ZabbixUserManual
 ![zabbix](https://github.com/lersakk/ZabbixUserManual/assets/136166133/73df118a-760a-41a8-b155-0ead08eb73a0)
 
+## Installation
 
 ### [Software Requirements](https://github.com/lersakk/ZabbixUserManual/blob/main/Software%20Requirements.md)  
 
