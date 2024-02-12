@@ -58,15 +58,23 @@ USER-NAME : ชื่อ User ที่ต้องการ
 <br>
 
 
-
 **ไปที่หน้า zabbix**
 
 เลือก Data Collection
+<br>
+![image](https://github.com/lersakk/ZabbixUserManual/assets/111458085/b71334b0-1fde-4d92-b956-6f31eaaa2325)
+<br>
 
 ***-กดไปที่ Hosts***
+<br>
+![image](https://github.com/lersakk/ZabbixUserManual/assets/111458085/fa18f0e9-7ae3-4f03-a19f-e37bc6b124fa)
+<br>
 
 ***-กด create Host ที่ด้านขวาบน***
+<br>
+![image](https://github.com/lersakk/ZabbixUserManual/assets/111458085/0be92265-35af-493d-825a-bac70bb23545)
 
+<br>
 #######################################################################
    
 Host Name : ชื่ออุปกรณ์ที่เราจะ monitor 
@@ -83,7 +91,10 @@ Host Groups : group ที่ต้องการให้ host อยู่
 ***-กด add ที่อยู่ด้านล่าง Host Groups***
 
 ***-เลือกเป็น SNMP***
+<br>
+![image](https://github.com/lersakk/ZabbixUserManual/assets/111458085/69e3f0c8-e198-41ed-9df8-320f0608c01a)
 
+<br>
 #######################################################################
 
 IP address : IP อุปการที่จะ monitor 
