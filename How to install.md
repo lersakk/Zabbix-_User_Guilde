@@ -32,6 +32,8 @@ git clone https://github.com/zabbix/zabbix-docker.git
 
 ~~~
 
+ ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5cf16685-d24e-42c1-9d96-b7f00ead8693)
+
 
 
 
