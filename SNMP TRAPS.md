@@ -34,3 +34,15 @@ sudo nano zabbix-docker/compose_zabbix_components.yaml
 ~~~
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/1324003c-54a9-4fff-90d4-e5d214d98005)
+
+
+
+### การเพิ่ม User ของอุปกรณ์ Network
+
+โดยเข้าไปใน File snmptrapd.conf  ด้วยคำสั่ง
+
+~~~
+
+sudo nano zabbix-docker/Dockerfiles/snmptraps/ubuntu/conf/etc/snmp/snmptrapd.conf
+
+~~~
