@@ -4,7 +4,7 @@
 
 เข้าไปที่หน้า enable ของอุปกณ์ Network (ยกตัวอย่าง switch)
 
-***-สร้าง snmp group***
+***สร้าง snmp group***
 ~~~
 Switch#configure terminal
 Switch(config)#snmp-server group {GROUP-NAME} v3 priv
