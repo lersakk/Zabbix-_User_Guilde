@@ -1,8 +1,6 @@
 # step 1 Install Docker
 ✨
-
-
-
+คุณสามารถนำคำสั่งด้านล่างไปวางได้เลย
 ~~~
 # Add Docker's official GPG key:
 sudo apt-get update
