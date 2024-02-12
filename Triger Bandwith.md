@@ -73,3 +73,10 @@
 ตัวอย่างการ Create trigger 
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5c786ef8-f225-4c84-b0f9-0f181d2a6bc7)
+
+
+
+
+เมื่อสร้าง Trigger สำเร็จแล้ว หลังจากนั้นเราจะนำ Trigger ไปใส่ใน Map ที่เราได้สร้างไว้
+
+
