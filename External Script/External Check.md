@@ -7,21 +7,26 @@
 
 __ตัวอย่างการทำ External Script เพื่อ Monitor ค่าประสิทธิภาพในการ Query ข้อมูลชื่อโดเมนบนระบบ DNS Server__
 
-## 1. การสร้าง File ของ Directory Script
+## 1. การสร้าง File ที่ Directory ของ External Script
 
 __Step 1 ใช้คำสั่งเพื่อเข้าไปที่ Directory ที่เก็บไฟล์ Script ภายนอก__
+
 __Command :__
+
 ~~~
 cd zabbix-docker/zbx_env/usr/lib/zabbix/externalscripts/
 ~~~
 
 __Step 2 ใช้คำสั่งเพื่อสร้างไฟล์ Script__
+
 __Command :__
+
 ~~~
 nano dns_query_time.sh
 ~~~
 
 __Step 3 ทำการเพิ่มข้อมูลบนไฟล์ ดังนี้__
+
 __Script :__
 ~~~
 #!/bin/bash
@@ -39,6 +44,7 @@ echo "$query_time"
 __Step 4 กดปุ่ม “Ctrl+x”  และ พิมพ์ “Y” เพื่อบันทึกไฟล์__
 
 __ใช้คำสั่งเพื่อให้สิทธ์แก่ไฟล์ Script__
+
 __Command :__
 ~~~
 sudo chmod 755 dns_query_time.sh
@@ -48,6 +54,7 @@ sudo chmod 755 dns_query_time.sh
 _ในการ Monitor ค่าประสิทธิภาพในการ Query ข้อมูลชื่อโดเมนบนระบบ DNS Server บน Container ของ Docker จำเป็นที่จะต้องใช้คำสั่ง dig และจะเป็นต้องมีแพคเกจ dnsutils_
 
 __Step 1 ใช้คำสั่งเพื่อแสดง List ของ Container ที่ทำงานอยู่__
+
 __Command :__
 ~~~
 sudo docker ps
@@ -60,6 +67,7 @@ sudo docker exec -u root -ti [CONTAINER-ID] bash
 ~~~
 
 __Step 3 หลังจากเข้ามาใน Container ใช้คำสั่งเพื่อทำการติดตั้ง dnsutils และรอการติดตั้งจนเสร็จสมบูรณ์__
+
 __Command :__
 ~~~
 apt-get update
@@ -75,12 +83,15 @@ apt install dnsutils
 __Step 1 ไปที่หน้า Zabbix Web Interface เพื่อกำหนดค่า__
 
 __Step 2 ไปที่แท็บ Data collection -> Templates -> Create Templates และใส่ข้อมูลดังนี้__
+
 ~~~
 Template name : External Check
 Template groups : Template groups (Group ที่ต้องการ) 
 ~~~
-![image](https://github.com/lersakk/ZabbixUserManual/assets/106941759/3ee97e3e-193f-4034-b18a-64f1adb4c7e5)
 
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/3ee97e3e-193f-4034-b18a-64f1adb4c7e5" width="100%">
+
+__.__
 
 __Step 3 ไปที่ Template ที่สร้าง -> ไปที่ Create Item ใส่ข้อมูลดังนี้__
 ~~~
@@ -90,12 +101,14 @@ Key : dns_query_time.sh (ชื่อไฟล์ที่ทำการสร�
 Type of information : Numeric (float)
 Update interval : 1m
 ~~~
-![image](https://github.com/lersakk/ZabbixUserManual/assets/106941759/890c9b39-8f3e-4653-b9e6-286a5bf323f1)
+
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/45eaa6a0-21b0-46e7-878a-ae181f4c99a7" width="100%">
+
+__.__
 
 __Step 4 ทำการกด “Add”__
+
 __Step 5 ทำการเพิ่ม Template เข้าไปที่ Host เพื่อทำการ Monitor__ ([How to Add Template to Hosts](https://www.w3schools.com/html/html_styles.asp))
-
-
 
 
 
