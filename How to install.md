@@ -28,11 +28,62 @@ sudo service docker start
 
 ~~~
 
-git clone https://github.com/zabbix/zabbix-docker.git
+sudo git clone https://github.com/zabbix/zabbix-docker.git
 
 ~~~
 
  ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5cf16685-d24e-42c1-9d96-b7f00ead8693)
+
+# Step 3 Edit File : compose_zabbix_components.yaml 
+
+~~~
+
+sudo nano zabbix-docker/ compose_zabbix_components.yaml
+
+~~~
+
+และไปเพิ่มข้อความดังต่อไปนี้ ดังรูป
+
+~~~
+
+links:
+ - zabbix-snmptraps
+
+~~~
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/65d031b3-cc0e-48d4-bbb7-54879d464222)
+
+
+# Step 4 Compose  containers
+
+ใช้คำสั่งดังต่อไปนี้
+
+~~~
+cd zabbix-docker/
+~~~
+
+~~~
+sudo  docker compose --profile full -f ./docker-compose_v3_ubuntu_pgsql_latest.yaml pull 
+~~~
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/bb52fb03-d632-4622-82a3-2933b2dd70cd)
+
+
+~~~
+sudo docker compose --profile full -f ./docker-compose_v3_ubuntu_pgsql_latest.yaml pull
+~~~
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/919269a8-3c2f-45a0-809e-46b1acf6f156)
+
+
+
+และใช้ คำสั่งต่อไปนี้ เพื่อตรวจสอบการรันของ Containers
+
+~~~
+sudo docker ps
+~~~
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/8350733a-26db-4595-9859-b0f43073fb4e)
 
 
 
