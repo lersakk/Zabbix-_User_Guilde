@@ -1,7 +1,9 @@
-# step 1 Install Docker
+# Step 1 Install Docker
 ✨
 คุณสามารถนำคำสั่งด้านล่างไปวางได้เลย
+
 ~~~
+
 # Add Docker's official GPG key:
 sudo apt-get update
 sudo apt-get install ca-certificates curl gnupg
@@ -17,6 +19,7 @@ echo \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo service docker start
+
 ~~~
 
 
