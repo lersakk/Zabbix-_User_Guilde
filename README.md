@@ -2,10 +2,7 @@
 ![zabbix](https://github.com/lersakk/ZabbixUserManual/assets/136166133/73df118a-760a-41a8-b155-0ead08eb73a0)
 
 
-## Software Requirements
-*  [Oracle VM VirtualBox](https://download.virtualbox.org/virtualbox/7.0.12/VirtualBox-7.0.12-159484-Win.exe)
-*  [Ubuntu Server](https://ubuntu.com/download/server)
-*  [Zabbix Appliance](https://cdn.zabbix.com/zabbix/appliances/stable/6.4/6.4.10/zabbix_appliance-6.4.10-ovf.tar.gz)
+## [Software Requirements](https://github.com/lersakk/ZabbixUserManual/blob/main/Software%20Requirements.md)
 
   
   
