@@ -99,6 +99,8 @@
 
 
 
+
+
 ✨ เสริมวิธีทำ Label taffic realtime ✨
 
 เข้าไปที่ Monitoring > Map > Edit map >  เลือกอุปกรณ์ที่ต้องการ > กด Edit ที่ Collumn Links  ✨ ในที่นี้จะเลือก Links Router ✨
