@@ -79,6 +79,6 @@
 
 เมื่อสร้าง Trigger สำเร็จแล้ว หลังจากนั้นเราจะนำ Trigger ไปใส่ใน Map ที่เราได้สร้างไว้
 
-เข้าไปที่ Monitoring > Map > เลือก Map ที่เราได้สร้างไว้ >
+เข้าไปที่ Monitoring > Map > เลือก Map ที่เราได้สร้างไว้ 
 
 สามารถดูวิธีการสร้างได้ที่  [Map](https://github.com/lersakk/ZabbixUserManual/blob/main/Map.md) 
