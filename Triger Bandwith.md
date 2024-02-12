@@ -83,6 +83,11 @@
 
 สามารถดูวิธีการสร้างได้ที่  [Map](https://github.com/lersakk/ZabbixUserManual/blob/main/Map.md) 
 
-จากนั้น กด Edit map > เลือกอุปกรณ์ที่ต้องการ > กด Edit ที่ Collumn Links
+จากนั้น กด Edit map > เลือกอุปกรณ์ที่ต้องการ > กด Edit ที่ Collumn Links  ✨ ในที่นี้จะเลือก Links Router ✨
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/2e0db9c1-e582-4276-b301-289fe75bb464)
+
+
+
 
 
