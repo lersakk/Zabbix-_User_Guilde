@@ -90,9 +90,29 @@
 
 ดูที่ Collumn Link indicators > Add
 
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/6f282086-0d55-4bc5-b09f-13cb2028ca15)
+
+
 เลือก Host ที่เราต้องการ และเลือก Trigger ที่เราได้สร้างไว้ จากนั้น  กด Select และกด Apply และกด Update ที่หน้า Network maps
+
  ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/6c3ef012-ad83-42d8-8b59-55fbb4bb77d3)
 
+
+
+✨ เสริมวิธีทำ Label taffic realtime ✨
+
+เข้าไปที่ Monitoring > Map > Edit map >  เลือกอุปกรณ์ที่ต้องการ > กด Edit ที่ Collumn Links  ✨ ในที่นี้จะเลือก Links Router ✨
+
+ไปที่ Collumn Label  จากนั้น ใส่ข้อความลงใน Label ดังนี้
+
+~~~
+
+In:{?last(/Swicth1/net.if.in[ifHCInOctets.10101])} /  Out:{?last(/Swicth1/net.if.out[ifHCOutOctets.10101])} [{?last(/Swicth1/net.if.speed[ifHighSpeed.10101])}]
+Swicth1:Gi0/1 <> Fa0/1(Router)
+
+~~~
+
+ข้อความข้างต้นเป็นเพียงตัวอย่างเท่านั้น คุณสามารถเปลี่ยน Interface ที่ต้องการได้จากการนำ Key มาใส่ โดยดูจาก 
 
 
 
