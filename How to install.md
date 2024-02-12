@@ -1,4 +1,4 @@
-# Step 1 Install Docker
+# Step 1  : Install Docker
 
 คุณสามารถนำคำสั่งด้านล่างไปวางได้เลย
 
@@ -22,7 +22,7 @@ sudo service docker start
 
 ~~~
 
-# Step 2 Git Clone Zabbix Docker 
+# Step 2 : Git Clone Zabbix Docker 
 
 ใช้คำสั่ง ด้านล่างเพื่อ Git Clone Zabbix มาไว้
 
@@ -34,7 +34,7 @@ sudo git clone https://github.com/zabbix/zabbix-docker.git
 
  ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5cf16685-d24e-42c1-9d96-b7f00ead8693)
 
-# Step 3 Edit File : compose_zabbix_components.yaml 
+# Step 3 : Edit File : compose_zabbix_components.yaml 
 
 ~~~
 
@@ -54,7 +54,7 @@ links:
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/65d031b3-cc0e-48d4-bbb7-54879d464222)
 
 
-# Step 4 Compose  containers
+# Step 4 : Compose  containers
 
 ใช้คำสั่งดังต่อไปนี้
 
@@ -87,7 +87,7 @@ sudo docker ps
 
 
 
-# Step 4 Login to Zabbix
+# Step 5 : Login to Zabbix
 
 http://{IP-ADDRESS-VM}/
 
