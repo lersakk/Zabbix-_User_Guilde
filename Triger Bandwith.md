@@ -8,7 +8,7 @@
 
 เลือก Severity ที่ต้องการ
 
-จากนั้นเพิ่ม Problem expression ตามคำสั่งด้านล่าง  ✨ คำสั่งนี้จะเป็นการจับBandwith ที่ G0/1 ✨
+จากนั้นเพิ่ม Problem expression ตามคำสั่งด้านล่าง  ✨ คำสั่งนี้จะเป็นการจับBandwith ที่ G0/1 Triger Bandwith
 
 ~~~
 
@@ -30,7 +30,7 @@
 
 และเลือก OK event generation  เป็น Recovery expression 
 
-จากนั้นเพิ่ม Recovery expressionv ตามคำสั่งด้านล่าง  ** คำสั่งนี้จะเป็นการจับBandwith ที่ G0/1 **
+จากนั้นเพิ่ม Recovery expressionv ตามคำสั่งด้านล่าง  ✨ คำสั่งนี้จะเป็นการจับBandwith ที่ G0/1 ✨
 
 ~~~
 
