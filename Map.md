@@ -25,3 +25,5 @@ With a link created, the single element form now contains an additional Links se
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/46f8ec4e-8721-44bb-9406-257826682273)
 
+
+นี่เป็นข้อมูล สำคัญบางส่วน คุณสามารถอ่านเพิ่มเติมได้ที่ [MORE](https://www.zabbix.com/documentation/current/en/manual/config/visualization/maps/map)
