@@ -58,7 +58,9 @@
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/d722785a-dc53-4f1c-8cb3-9d8d02e3e001)
 
 จากนั้นเลือก Interface ที่ตองการจะดูที่ TAG VALUES > Interface 
+
 ในที่นี้ จากเลือก G0/1
+
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/06542edc-f316-4640-a721-738232a1da3a)
 
 
