@@ -79,6 +79,8 @@ __Step 2 ไปที่แท็บ Data collection -> Templates -> Create Temp
 Template name : External Check
 Template groups : Template groups (Group ที่ต้องการ) 
 ~~~
+![image](https://github.com/lersakk/ZabbixUserManual/assets/106941759/3ee97e3e-193f-4034-b18a-64f1adb4c7e5)
+
 
 __Step 3 ไปที่ Template ที่สร้าง -> ไปที่ Create Item ใส่ข้อมูลดังนี้__
 ~~~
@@ -88,10 +90,10 @@ Key : dns_query_time.sh (ชื่อไฟล์ที่ทำการสร�
 Type of information : Numeric (float)
 Update interval : 1m
 ~~~
+![image](https://github.com/lersakk/ZabbixUserManual/assets/106941759/890c9b39-8f3e-4653-b9e6-286a5bf323f1)
 
 __Step 4 ทำการกด “Add”__
-__Step 5 ทำการเพิ่ม Template เข้าไปที่ Host เพื่อทำการ Monitor__
-
+__Step 5 ทำการเพิ่ม Template เข้าไปที่ Host เพื่อทำการ Monitor__ ([How to Add Template to Hosts](https://www.w3schools.com/html/html_styles.asp))
 
 
 
