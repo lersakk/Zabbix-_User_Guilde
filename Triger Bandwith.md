@@ -6,7 +6,7 @@
 
 เลือก Severity ที่ต้องการ
 
-จากนั้นเพิ่ม Problem expression ตามคำสั่งด้านล่าง  ** คำสั่งนี้จะเป็นการจับBandwith ที่ G0/1 **
+จากนั้นเพิ่ม Problem expression ตามคำสั่งด้านล่าง  ✨ คำสั่งนี้จะเป็นการจับBandwith ที่ G0/1 ✨
 
 ~~~
 
@@ -59,7 +59,7 @@
 
 จากนั้นเลือก Interface ที่ตองการจะดูที่ TAG VALUES > Interface 
 
-** ในที่นี้ จากเลือก G0/1 **
+✨ ในที่นี้ จากเลือก G0/1 ✨
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/06542edc-f316-4640-a721-738232a1da3a)
 
@@ -81,4 +81,4 @@
 
 เข้าไปที่ Monitoring > Map > เลือก Map ที่เราได้สร้างไว้ >
 
-สามารถดูวิธีการสร้างได้ที่ ![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpP-maq6XHsgcff2dJZcbjQTkvqUolKSOxCA&usqp=CAU) [Map](https://github.com/lersakk/ZabbixUserManual/blob/main/Map.md) 
+สามารถดูวิธีการสร้างได้ที่  [Map](https://github.com/lersakk/ZabbixUserManual/blob/main/Map.md) 
