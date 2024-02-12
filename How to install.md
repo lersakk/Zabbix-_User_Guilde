@@ -87,5 +87,15 @@ sudo docker ps
 
 
 
+# Step 4 Login to Zabbix
+
+http://{IP-ADDRESS-VM}/
+
+Username :  Admin
+
+Password  :  zabbix
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/f4df2c9b-cb7c-44f3-86d1-bcae1028d0e7)
+
 
 
