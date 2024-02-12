@@ -73,7 +73,5 @@ sudo apt install snmp
 จากนั้น Run  snmpwalk 
 
 ~~~
-snmpwalk -v3 -u {USER-NAME} -l authPriv -a sha -A {PASSWORD} -x aes -X 
-{PASSWORD} {IP-ADDRESS-HOST}
-
+snmpwalk -v3 -u {USER-NAME} -l authPriv -a sha -A {PASSWORD} -x aes -X {PASSWORD} {IP-ADDRESS-HOST}
 ~~~
