@@ -106,14 +106,20 @@ Key : snmptrap[]
 
 log time format : yyyyMMdd.hhmmss
 
------------------------------------------------
-
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/81249e4d-7636-494d-92be-d03d62035045)
 
 
+หลังจากนั้น Add template ใส่ให้กับ Network Device ที่ต้องการ
 
 
+### การตรวจสอบ Log ของ snmp trap
+
+ตรวจสอบ Log snmptraps เข้าไปที่ Monitoring > Latest data > SNMP TRAPS > History
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/ec97096d-8b7d-47ef-9f77-5702f0ec94fe)
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5d5a7bb2-2ec7-4bb1-929b-717fc5b9f312)
 
 
 
