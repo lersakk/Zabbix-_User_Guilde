@@ -46,3 +46,20 @@ sudo nano zabbix-docker/compose_zabbix_components.yaml
 sudo nano zabbix-docker/Dockerfiles/snmptraps/ubuntu/conf/etc/snmp/snmptrapd.conf
 
 ~~~
+
+โดยมีการเขียนดังนี้
+
+~~~
+
+createUser -e 0x{ENGINE-ID} {USER-NAME} SHA1 {PASSWORD} AES {PASSWORD}
+authUser log,execute,net {USER-NAME} priv
+
+~~~
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/9cc65eb7-805a-4815-8e02-dc242190d7a7)
+
+
+###  การติดตั้ง snmp และ Run snmpwalk
+
+
+
