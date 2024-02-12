@@ -107,6 +107,7 @@
 
 ไปที่ Collumn Label  จากนั้น ใส่ข้อความลงใน Label ดังนี้
 
+✨ ในที่นี้จะเป็นการ จับ การส่ง-รับ ใน Interface G0/1 ของ Switch1 ✨
 ~~~
 
 In:{?last(/Swicth1/net.if.in[ifHCInOctets.10101])} /  Out:{?last(/Swicth1/net.if.out[ifHCOutOctets.10101])} [{?last(/Swicth1/net.if.speed[ifHighSpeed.10101])}]
@@ -115,3 +116,6 @@ Swicth1:Gi0/1 <> Fa0/1(Router)
 ~~~
 
 ข้อความข้างต้นเป็นเพียงตัวอย่างเท่านั้น คุณสามารถเปลี่ยน Interface ที่ต้องการได้จากการนำ Key มาใส่ โดยดูจาก [Key](https://github.com/lersakk/ZabbixUserManual/blob/main/Triger%20Bandwith.md#%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%94%E0%B8%B9-key-%E0%B8%82%E0%B8%AD%E0%B8%87-interface-%E0%B8%82%E0%B8%AD%E0%B8%87-host-%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3)
+
+
+
