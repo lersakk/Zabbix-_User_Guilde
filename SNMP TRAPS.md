@@ -59,6 +59,9 @@ authUser log,execute,net {USER-NAME} priv
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/9cc65eb7-805a-4815-8e02-dc242190d7a7)
 
 
+โดยนำข้อมูลมาจากการที่เรานั้นได้สร้าง [snmp user](https://github.com/lersakk/ZabbixUserManual/blob/main/Add%20Host.md) ไว้   
+ 
+
 ###  การติดตั้ง snmp และ Run snmpwalk
 
 เริ่มต้นด้วยการติดตั้ง snmp 
