@@ -59,7 +59,7 @@
 
 จากนั้นเลือก Interface ที่ตองการจะดูที่ TAG VALUES > Interface 
 
-ในที่นี้ จากเลือก G0/1
+**ในที่นี้ จากเลือก G0/1**
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/06542edc-f316-4640-a721-738232a1da3a)
 
