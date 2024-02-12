@@ -81,4 +81,4 @@
 
 เข้าไปที่ Monitoring > Map > เลือก Map ที่เราได้สร้างไว้ >
 
-วิธีการสร้าง [Map](https://github.com/lersakk/ZabbixUserManual/blob/main/Map.md) 
+สามารถดูวิธีการสร้างได้ที่ ![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpP-maq6XHsgcff2dJZcbjQTkvqUolKSOxCA&usqp=CAU) [Map](https://github.com/lersakk/ZabbixUserManual/blob/main/Map.md) 
