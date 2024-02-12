@@ -5,7 +5,7 @@
 </h1> </strong>
 <br>
 
-__ตัวอย่างการทำ External Script เพื่อ Monitor ค่าประสิทธิภาพในการ Query ข้อมูลชื่อโดเมนบนระบบ DNS Server__
+<h1>ตัวอย่างการทำ External Script เพื่อ Monitor ค่าประสิทธิภาพในการ Query ข้อมูลชื่อโดเมนบนระบบ DNS Server</h1>
 
 ## 1. การสร้าง File ที่ Directory ของ External Script
 
