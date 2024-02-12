@@ -38,7 +38,7 @@ curl -X POST -H "Authorization: Bearer $send_to" \
 
 ~~~
 
-จากนั้นให้ใส่คำสั่ง ด้านล่าง เพื่อให้ zabbix สามารถใช้ script เพื่อส่งการแจ้งเตือนได้
+จากนั้นให้ใส่คำสั่ง ด้านล่าง เพื่อให้ สิทธิ์กับไฟล์ script
 
 ~~~
 sudo chmod +x line-notify
@@ -50,7 +50,7 @@ sudo chmod +x line-notify
 ## สร้าง Media 
 
 การสร้าง Media ขึ้นมาให้ไปที่ Alerts >Media types > Create media type 
-จากนั้นกรอกข้อมูลตามรูปด้านล่าง Script parameters ทั้ง3 ตัวที่ใส่ไปมีดังนี้
+จากนั้นกรอกข้อมูลตามรูปด้านล่าง ใน Script parameters ทั้ง 3 ตัวที่จะต้องใส่ไปมีดังนี้
 {ALERT.SENDTO},{ALERT.SUBJECT},{ALERT.MESSAGE}
 จากนั้นก็กด Add 
 
@@ -63,7 +63,7 @@ sudo chmod +x line-notify
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/138e3c93-13dd-4667-be87-dd044f596767)
 
 
-จากนั้น  Login จากนั้นกด Drop down list ลงมาที่ชื่อ Line ของเรา เลือก My page
+จากนั้น  Login และกด Drop down list ลงมาจากชื่อ Line ของเรา เลือก My page
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/b048188b-8681-48f4-a3ed-a609810f48d2)
 
