@@ -22,3 +22,31 @@
 )
 
 ~~~
+
+และเลือก OK event generation  เป็น Recovery expression 
+
+จากนั้นเพิ่ม Recovery expressionv ตามคำสั่งด้านล่าง  ** คำสั่งนี้จะเป็นการจับBandwith ที่ G0/1 **
+
+~~~
+
+(
+    (
+        avg(/Swicth1/net.if.in[ifHCInOctets.10101], 1m) < last(/Swicth1/net.if.speed[ifHighSpeed.10101]) * 0 / 100 
+        or avg(/Swicth1/net.if.in[ifHCInOctets.10101], 1m) > last(/Swicth1/net.if.speed[ifHighSpeed.10101]) * 5 / 100
+        and last(/Swicth1/net.if.speed[ifHighSpeed.10101]) > 0
+    ) 
+    or 
+    (
+        avg(/Swicth1/net.if.out[ifHCOutOctets.10101], 1m) < last(/Swicth1/net.if.speed[ifHighSpeed.10101]) * 0 / 100 
+        or avg(/Swicth1/net.if.out[ifHCOutOctets.10101], 1m) > last(/Swicth1/net.if.speed[ifHighSpeed.10101]) * 5 / 100
+        and last(/Swicth1/net.if.speed[ifHighSpeed.10101]) > 0
+    )
+)
+
+~~~
+
+และกด Add เพื่อเพิ่ม Trigger 
+
+ตัวอย่างการ Create trigger 
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5c786ef8-f225-4c84-b0f9-0f181d2a6bc7)
