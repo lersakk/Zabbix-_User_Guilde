@@ -1,26 +1,49 @@
-**ขั้นตอนการ Add Host**
+<strong> <h1>
+<p>------------------------------------------------------------------------------</p>
+<p>--------------------------------- Add Host ---------------------------------</p>
+<p>------------------------------------------------------------------------------</p>
+</h1> </strong>
+<br>
+
+<h1>ตัวอย่างขั้นตอนการเพิ่มอุปกรณ์เครือข่ายเพื่อ Monitoring ค่าประสิทธิภาพในการทำงานของตัวอุปกรณ์</h1>
+
+# ขั้นตอนการ Add Host
 
 มีการดำเนินการ 2 ที่ คือ บนอุปกรณ์ Network และ บน Zabbix
 
-เข้าไปที่หน้า enable ของอุปกณ์ Network (ยกตัวอย่าง switch)
 
-**-สร้าง snmp group**
+
+
+## Part 1 Network Device Configuretion
+
+__Step 1 : Start__
+1) ต่อสาย Console เพื่อทำการกำหนดค่าบนตัวอุปกรณ์ Network
+2)	ใช้ Putty เพื่อทำการ Console เข้าตัว อุปกรณ์ Network
+3)	enable (ใช้คำสั่ง enable เพื่อเข้าสู่ Privilege Mode)
+4)	configure terminal (ใช้คำสั่ง configure terminal เพื่อเข้าสู่ Configuration Mode)
+
+
+__Step 2 : การสร้าง snmp group__
 ~~~
 Switch#configure terminal
 Switch(config)#snmp-server group {GROUP-NAME} v3 priv
 ~~~
 
-**ตรวจสอบ Group**
+__Step 3 : การตรวจสอบ Group__
 ~~~
 Switch#show snmp group
 ~~~
- ***-สร้าง snmp user (ตัวอย่าง snmp version 3)***
- ~~~
+
+__Step 4 : การสร้าง snmp user (ตัวอย่าง snmp version 3)__
+
+_Command :_
+~~~
 Switch(config)#snmp-server user {USER-NAME} {GROUP-NAME} v3 auth sha {PASSWORD} priv aes 128 {PASSWORD}
- ~~~
+~~~
 
-#######################################################################
+_Parameter :_
 
+~~~
 USER-NAME : ชื่อUser ที่ต้องการตั้ง
 
 GROUP-NAME : ชื่อ group snmp ที่ตั้งไว้ ที่ต้องการให้ user อยู่
@@ -28,80 +51,64 @@ GROUP-NAME : ชื่อ group snmp ที่ตั้งไว้ ที่ต
 v3 : snmp version 3
 
 Password : รหัสผ่านที่ต้องการตั้ง
+~~~
 
-#######################################################################
 
-**ตรวจสอบ User**
+__Step 5 : ตรวจสอบ User__
 
 ~~~
 Switch#show snmp user
 ~~~
 
-<br>
-<br>
-<br>
 
-***-Config อุปกรณ์ Network เพื่อให้มีการเปิดใช้งาน SNMP***
+__Step 6 : Config อุปกรณ์ Network เพื่อให้มีการเปิดใช้งาน SNMP__
+
 ~~~
 Switch(config)#snmp-server enable traps
 ~~~
 
 
-**-enable host**
+__Step 7 : Enable host__
 
+_Command :_
 ~~~
-Switch(config)#snmp-server host {IP-ADDRESS-VM} version 3 priv {USER-NAME}
+Switch(config)#snmp-server host {IP-ADDRESS-SERVER} version 3 priv {USER-NAME}
 ~~~
-#######################################################################
 
-IP-ADDRESS-VM : IP ของ Ubuntu
+_Parameter :_
+~~~
+IP-ADDRESS-SERVER : IP ของ Ubuntu
 
 USER-NAME : ชื่อ User ที่ต้องการ
+~~~
 
-#######################################################################
 <br>
 <br>
-<br>
+
+## Part 2 Zabbix Server Configuretion
 
 
 **ไปที่หน้า zabbix**
+![image](https://github.com/lersakk/ZabbixUserManual/assets/106941759/4ff020bc-fe4a-49c2-9352-718a86a3ba60)
 
-เลือก Data Collection
-<br>
-![image](https://github.com/lersakk/ZabbixUserManual/assets/111458085/b71334b0-1fde-4d92-b956-6f31eaaa2325)
-<br>
 
-**-กดไปที่ Hosts**
-<br>
-![image](https://github.com/lersakk/ZabbixUserManual/assets/111458085/fa18f0e9-7ae3-4f03-a19f-e37bc6b124fa)
-<br>
 
-**-กด create Host ที่ด้านขวาบน**
-<br>
-![image](https://github.com/lersakk/ZabbixUserManual/assets/111458085/0be92265-35af-493d-825a-bac70bb23545)
+**เลือก Data Collection กดไปที่ Hosts And กด create Host ที่ด้านขวาบน**
+![image](https://github.com/lersakk/ZabbixUserManual/assets/106941759/d901fb4d-faec-4e93-ad4e-271ad43e1a99)
 
-<br>
-#######################################################################
-   
+
+
+**กรอกข้อมูลที่จำเป็น**
+![image](https://github.com/lersakk/ZabbixUserManual/assets/106941759/206450e4-2b09-469c-81a2-0e85dfbc0de2)
+
+_Parameter :_
+
+~~~   
 Host Name : ชื่ออุปกรณ์ที่เราจะ monitor 
 
 Template : เลือก Template ที่ต้องการ 
 
 Host Groups : group ที่ต้องการให้ host อยู่
-
-#######################################################################
-<br>
-<br>
-<br>
-
-***-กด add ที่อยู่ด้านล่าง Host Groups***
-
-**-เลือกเป็น SNMP**
-<br>
-![image](https://github.com/lersakk/ZabbixUserManual/assets/111458085/69e3f0c8-e198-41ed-9df8-320f0608c01a)
-
-<br>
-#######################################################################
 
 IP address : IP อุปการที่จะ monitor 
 
@@ -122,6 +129,22 @@ Authentication passphrase : {PASSWORD}
 Privacy protocol : DES,AES128,AES192,AES256,AES192C,AES256C
 
 Privacy passphrase : {PASSWORD}
+~~~
+
+<br>
+<br>
+<br>
+
+***-กด add ที่อยู่ด้านล่าง Host Groups***
+
+**-เลือกเป็น SNMP**
+<br>
+![image](https://github.com/lersakk/ZabbixUserManual/assets/111458085/69e3f0c8-e198-41ed-9df8-320f0608c01a)
+
+<br>
+#######################################################################
+
+
 
 #######################################################################
 
