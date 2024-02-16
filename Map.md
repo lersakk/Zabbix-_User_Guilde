@@ -8,6 +8,8 @@ Go to Monitoring → Maps
 
 The Map tab contains general map attributes:
 
+
+
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/57337970-c73b-433c-b6ab-ddbb14dc8121)
 
 ## Adding elements
