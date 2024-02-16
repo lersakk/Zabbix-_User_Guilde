@@ -39,5 +39,8 @@ And select the trigger that wants to be warned by the warning. The warning will 
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/49b3ddda-0425-4de4-86b8-35f13b96a1e1)
 
+
+เเละคุณสามารถที่จะสร้าง
+
  
 This is some important information. You can read more at [MORE](https://www.zabbix.com/documentation/current/en/manual/config/visualization/maps/map)
