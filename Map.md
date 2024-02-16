@@ -20,9 +20,8 @@ Change Icon :
 
 If everything is done, press apply
 
- 
+ ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/e9342802-653b-4287-bc5a-b975f1d76a89)
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/689c67ec-3f8e-4f4b-802d-9c1b11e3504b)
 
 ## Linking elements
 
