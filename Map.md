@@ -29,8 +29,6 @@ Once you have put some elements on the map, it is time to start linking them. To
 
 With a link created, the single element form now contains an additional Links section. Click on Edit to edit link attributes.
 
-
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/46f8ec4e-8721-44bb-9406-257826682273)
-
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/62fda27c-342a-4839-9bdc-da8a6b0db3b9)
 
 นี่เป็นข้อมูล สำคัญบางส่วน คุณสามารถอ่านเพิ่มเติมได้ที่ [MORE](https://www.zabbix.com/documentation/current/en/manual/config/visualization/maps/map)
