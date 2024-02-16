@@ -11,7 +11,7 @@ The Map tab contains general map attributes:
 
 ## Adding elements
 You can go to Monitoring → Maps → Go to the view with all maps → Click on Constructor
-To add elements  โดยการไปคลิกที่ Add ที่ map elements เเละคลิกที่ element นั้นๆ เพื่อกำหนด
+To add elements  By clicking on the add at map elements and click on that element to determine
 Type : 
 
 Label:
@@ -31,4 +31,13 @@ With a link created, the single element form now contains an additional Links se
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/62fda27c-342a-4839-9bdc-da8a6b0db3b9)
 
-นี่เป็นข้อมูล สำคัญบางส่วน คุณสามารถอ่านเพิ่มเติมได้ที่ [MORE](https://www.zabbix.com/documentation/current/en/manual/config/visualization/maps/map)
+ And you can add trigger in Link indicator By clik on the Add in Column Linkindicator
+ 
+ ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/058be4d2-0ac5-48cd-9d79-2ec53a1d1df0)
+
+And select the trigger that wants to be warned by the warning. The warning will come in the form of Changing the color of the Link indicator.
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/49b3ddda-0425-4de4-86b8-35f13b96a1e1)
+
+ 
+This is some important information. You can read more at [MORE](https://www.zabbix.com/documentation/current/en/manual/config/visualization/maps/map)
