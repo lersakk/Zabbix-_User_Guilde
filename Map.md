@@ -7,14 +7,20 @@ Go to Monitoring → Maps
 → Click on Create map
 
 The Map tab contains general map attributes:
-
-
-
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/57337970-c73b-433c-b6ab-ddbb14dc8121)
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5a223fca-9607-488c-a24d-a830671fd772)
 
 ## Adding elements
+You can go to Monitoring → Maps → Go to the view with all maps → Click on Constructor
+To add elements  โดยการไปคลิกที่ Add ที่ map elements เเละคลิกที่ element นั้นๆ เพื่อกำหนด
+Type : 
 
-To add an element, click on Add next to . The new element will appear at the top left corner of the map. Drag and drop it wherever you like in collumn Map element
+Label:
+
+Change Icon :
+
+If everything is done, press apply
+
+ 
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/689c67ec-3f8e-4f4b-802d-9c1b11e3504b)
 
