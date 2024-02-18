@@ -5,7 +5,7 @@
 
 ### [Software Requirements](https://github.com/lersakk/ZabbixUserManual/blob/main/1.Software%20Requirements.md)  
 
-### [How To Install](https://github.com/lersakk/ZabbixUserManual/blob/main/2.How%20to%20install%20zabbix.md)
+### [How To Install](https://github.com/lersakk/ZabbixUserManual/blob/main/2.How%20to%20install%20Zabbix.md)
 
 ### [Add Host](https://github.com/lersakk/ZabbixUserManual/blob/main/Add%20Hosts.md)
 
