@@ -1,5 +1,10 @@
+<strong> <h1>
+<p>------------------------------------------------------------------------------</p>
+<p>------------------------------- SNMP Traps --------------------------------</p>
+<p>------------------------------------------------------------------------------</p>
+</h1> </strong>
 
-# การตั้งค่า SNMP TRAPS ใน Zabbix
+# การตั้งค่า SNMP Traps ใน Zabbix
 
 ## แก้ไขไฟล์ .env เพื่อใช้งานไฟล์ภายนอก
 
@@ -17,7 +22,7 @@ sudo nano zabbix-docker/.env
 SNMPTRAP_DIRECTORY=./Dockerfiles/snmptraps/ubuntu/conf/etc/snmp/snmptrapd.conf
 ```
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/a13c7ae3-522e-429d-be82-b07780d863bf)
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/a13c7ae3-522e-429d-be82-b07780d863bf" width="100%">
 
 ## เพิ่มคำสั่งใน compose_zabbix_components.yaml
 
@@ -34,8 +39,7 @@ sudo nano zabbix-docker/compose_zabbix_components.yaml
 ```
 - ${SNMPTRAP_DIRECTORY}:/etc/snmp/snmptrapd.conf:ro
 ```
-
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/1324003c-54a9-4fff-90d4-e5d214d98005)
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/1324003c-54a9-4fff-90d4-e5d214d98005" width="100%">
 
 ## เพิ่มผู้ใช้งานสำหรับอุปกรณ์เครือข่าย
 
@@ -51,8 +55,7 @@ sudo nano zabbix-docker/Dockerfiles/snmptraps/ubuntu/conf/etc/snmp/snmptrapd.con
 createUser -e 0x{ENGINE-ID} {USER-NAME} SHA1 {PASSWORD} AES {PASSWORD}
 authUser log,execute,net {USER-NAME} priv
 ```
-
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/9cc65eb7-805a-4815-8e02-dc242190d7a7)
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/9cc65eb7-805a-4815-8e02-dc242190d7a7" width="100%">
 
 ข้อมูลเหล่านี้มาจากการสร้าง [ผู้ใช้งาน SNMP](https://github.com/lersakk/ZabbixUserManual/blob/main/Add%20Host.md)
 
@@ -90,11 +93,13 @@ snmpwalk -v3 -u {USER-NAME} -l authPriv -a sha -A {PASSWORD} -x aes -X {PASSWORD
 
 5. ตั้งชื่อ กำหนด Key และตั้งค่าต่างๆ ตามต้องการ และกด Add
 
+~~~
 ตัวอย่าง:
 
 - Name: Snmp traps
 - Key: snmptrap[]
 - Log time format: yyyyMMdd.hhmmss
+~~~
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/81249e4d-7636-494d-92be-d03d62035045)
 
