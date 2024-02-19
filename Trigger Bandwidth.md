@@ -114,3 +114,6 @@ Swicth1:Gi0/1 <> Fa0/1(Router)
 ~~~
 
 Script ข้างต้นเป็นเพียงตัวอย่างเท่านั้น คุณสามารถเปลี่ยนแปลง Interface ที่ต้องการได้จากการนำ Key มาใส่แทนที่ สามารถดูตัวอย่างได้ที่ : [Key Interface](https://github.com/lersakk/ZabbixUserManual/blob/main/Triger%20Bandwith.md#%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%94%E0%B8%B9-key-%E0%B8%82%E0%B8%AD%E0%B8%87-interface-%E0%B8%82%E0%B8%AD%E0%B8%87-host-%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3)
+
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5671100c-8b99-41b6-a7a1-4af2b555214d)
+
