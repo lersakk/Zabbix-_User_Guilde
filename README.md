@@ -9,7 +9,7 @@
 
 ### [3. Add Host](https://github.com/lersakk/ZabbixUserManual/blob/main/Add%20Hosts.md)
 
-### [4. SNMP TRAPS]([https://github.com/lersakk/ZabbixUserManual/blob/main/Add%20Hosts.md](https://github.com/lersakk/ZabbixUserManual/blob/main/SNMP%20Traps.md))
+### [4. SNMP TRAPS]((https://github.com/lersakk/ZabbixUserManual/blob/main/SNMP%20Traps.md))
 
 ## Options
 #### [Triger Bandwith](https://github.com/lersakk/ZabbixUserManual/blob/main/Trigger%20Bandwidth.md)
