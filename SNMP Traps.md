@@ -16,7 +16,7 @@
 sudo nano zabbix-docker/.env
 ```
 
-2. เพิ่มข้อความต่อไปนี้:
+2. เพิ่มข้อความต่อไปนี้ ที่ # Locations
 
 ```
 SNMPTRAP_DIRECTORY=./Dockerfiles/snmptraps/ubuntu/conf/etc/snmp/snmptrapd.conf
