@@ -57,6 +57,7 @@ sudo chmod +x line-notify
 
 การสร้าง Media ขึ้นมาให้ไปที่ Alerts >Media types > Create media type 
 จากนั้นกรอกข้อมูลตามรูปด้านล่าง ใน Script parameters ทั้ง 3 ตัวที่จะต้องใส่ไปมีดังนี้
+
 {ALERT.SENDTO}
 
 {ALERT.SUBJECT}
