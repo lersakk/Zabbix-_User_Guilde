@@ -1,13 +1,13 @@
 # ZabbixUserManual
 ![zabbix](https://github.com/lersakk/ZabbixUserManual/assets/136166133/73df118a-760a-41a8-b155-0ead08eb73a0)
 
-## Installation
+## Step from Installation
 
-### [Software Requirements](https://github.com/lersakk/ZabbixUserManual/blob/main/1.Software%20Requirements.md)  
+### [1. Install Software Requirements](https://github.com/lersakk/ZabbixUserManual/blob/main/1.Software%20Requirements.md)  
 
-### [How To Install](https://github.com/lersakk/ZabbixUserManual/blob/main/2.How%20to%20install%20Zabbix.md)
+### [2. Install Zabbix](https://github.com/lersakk/ZabbixUserManual/blob/main/2.How%20to%20install%20Zabbix.md)
 
-### [Add Host](https://github.com/lersakk/ZabbixUserManual/blob/main/Add%20Hosts.md)
+### [3. Add Host](https://github.com/lersakk/ZabbixUserManual/blob/main/Add%20Hosts.md)
 
 ## Options
 #### [Triger Bandwith](https://github.com/lersakk/ZabbixUserManual/blob/main/Trigger%20Bandwidth.md)
