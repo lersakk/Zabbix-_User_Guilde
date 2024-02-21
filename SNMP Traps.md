@@ -34,7 +34,7 @@ SNMPTRAP_DIRECTORY=./Dockerfiles/snmptraps/ubuntu/conf/etc/snmp/snmptrapd.conf
 sudo nano zabbix-docker/compose_zabbix_components.yaml
 ```
 
-2. เพิ่มข้อความต่อไปนี้ที่ส่วนของ zabbix-snmptraps:
+2. เพิ่มข้อความต่อไปนี้ที่ส่วนของ zabbix-snmptraps: > volumes:
 
 ```
 - ${SNMPTRAP_DIRECTORY}:/etc/snmp/snmptrapd.conf:ro
