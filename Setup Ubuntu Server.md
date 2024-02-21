@@ -1,4 +1,4 @@
-Start Machine
+Start Virtual Machine
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/9a612431-7e71-48e9-b038-db15b0d656b4" width="80%">
 
