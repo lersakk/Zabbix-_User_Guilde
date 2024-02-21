@@ -18,7 +18,9 @@ The Map tab contains general map attributes:
 ## Adding elements
 You can go to Monitoring → Maps → Go to the view with all maps → Click on Constructor
 To add elements  By clicking on the add at map elements and click on that element to determine
-Type : 
+
+
+Type : Host
 
 Label:
 ~~~
