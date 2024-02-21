@@ -102,7 +102,7 @@ sudo chmod +x line-notify
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/46b4228b-5e69-40fc-82fb-03382ac0816c)
 
 หลังจากนั้นกำหนดให้ส่งไปที่ Line  
-โดยไปที่ Users > Users > Media > add
+โดยไปที่ Users > Users > เลือก User > Media > add
 เลือก Type  เป็น Line-notify    Send to ให้นำ token ที่คัดลอกไว้มาใส่แล้วกด Add เป็นอันเสร็จ
 
 
