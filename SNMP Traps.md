@@ -79,7 +79,7 @@ snmpwalk -v3 -u {USER-NAME} -l authPriv -a sha -A {PASSWORD} -x aes -X {PASSWORD
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/d3fa01b6-d0d5-4769-a46b-78b225453950)
 
-2. ตั้งชื่อ Template และเลือก Template groups
+2. ตั้งชื่อ Template และเลือก Template groups จากนั้น กด Add
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/191dc9d4-7814-4d05-ad20-e1c1d2cf9c14)
 
