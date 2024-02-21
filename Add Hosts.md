@@ -70,7 +70,7 @@ _Parameter :_
 
 ~~~
 IP-ADDRESS-SERVER   : IP ของ Ubuntu
-USER-NAME           : ชื่อ User ที่ต้องการ
+USER-NAME           : {USER-NAME} ที่ต้องการ
 ~~~
 
 <br>
