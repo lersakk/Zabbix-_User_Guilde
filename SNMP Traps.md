@@ -99,6 +99,7 @@ snmpwalk -v3 -u {USER-NAME} -l authPriv -a sha -A {PASSWORD} -x aes -X {PASSWORD
 - Name: Snmp traps
 - type: SNMP trap
 - Key: snmptrap[]
+- Type of information: Log
 - Log time format: yyyyMMdd.hhmmss
 ~~~
 
