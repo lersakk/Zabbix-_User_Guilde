@@ -108,7 +108,7 @@ __.__
 
 __Step 4 ทำการกด “Add”__
 
-__Step 5 ทำการเพิ่ม Template เข้าไปที่ Host เพื่อทำการ Monitor__ ([How to Add Template to Hosts](https://www.w3schools.com/html/html_styles.asp))
+__Step 5 ทำการเพิ่ม Template เข้าไปที่ Host เพื่อทำการ Monitor__ ([How to Add Template to Hosts](https://github.com/lersakk/ZabbixUserManual/blob/main/SNMP%20Traps.md#%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%A1%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%95%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%9A-snmp-traps))
 
 
 
