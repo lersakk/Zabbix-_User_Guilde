@@ -1,49 +1,73 @@
-Start Virtual Machine
+![User Mannal (1)](https://github.com/lersakk/ZabbixUserManual/assets/106941759/03e62154-5279-4d12-9de7-8667100d8d72)
+
+
+<h1>How to Setup Ubuntu Server</h1>
+
+<h2>Step 1 : Start Virtual Machine</h2>
+<p><i>Select your zabbix Virtual Machine and Click Start for run machine</i></p>
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/9a612431-7e71-48e9-b038-db15b0d656b4" width="80%">
 
 
-Select Lang
+<h2>Step 2 : Select Language</h2>
+<p><i>Select your Language to use on zabbix Virtual Machine and Click "Next"</i></p>
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/915a78dc-af2d-47b5-abd6-071caeb4cdf1" width="80%">
 
 
-interface
+<h2>Step 3 : Setup Interface</h2>
+<p><i>Setup your Interface to use on zabbix Virtual Machine and Click "Done" and Config follow Structure</i></p>
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/5030ef1d-97e9-4501-bae1-b4f3c5357106" width="80%">
 
 
-Update
+<h2>Step 4 : Update</h2>
+<p><i>Update packets necessary and Click "Done"</i></p>
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/7f7c246d-f457-4ccc-9c6a-a6a25964b44d" width="80%">
 
 
-Storage
+<h2>Step 5 : Storage</h2>
+<p><i>Setup storage to use on your zabbix server and Click "Done"</i></p>
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/c4d3f50d-04a0-444a-8f0f-37a9184904f8" width="80%">
 
 
-Profile
+<h2>Step 6 : Profile</h2>
+<p><i>Setup profile to access to Ubuntu and Click "Done"</i></p>
+
+__Example__
+~~~
+Your name : zabbix
+Your Server Name : zabbix-server
+Pick a Username : zabbixadmin
+Pick a Password : P@ssw0rd
+Comfirm your password : P@ssw0rd 
+~~~
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/44d6cfce-54a2-4085-879b-58e48927df96" width="80%">
 
 
-Optional Features
+<h2>Step 7 : Optional Features</h2>
+<p><i>Select Optional Features to install and Click "Done"</i></p>
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/690c0772-351b-463c-bc4b-c913350214b4" width="80%">
 
 
-reboot
+<h1>Step 8 : reboot</h1>
+<p><i>After install complete Choose "Reboot Now" For reboot machine</i></p>
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/78ed87d7-6861-40dc-98dc-37b9a2fc4127" width="80%">
 
 
-finished reboot
+<h1>Step 9 : finished reboot</h1>
+<p><i>Finished install your server already for setup optional</i></p>
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/1ef873a1-396a-499c-9460-280bf0aa0de4" width="80%">
 
 
-login wit root
+<h1>Step 10 : login wit root</h1>
+<p><i>Test Login with user in Step 6 </i></p>
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/5588f2f2-2606-4635-8ee5-ae91fed4a060" width="80%">
 
