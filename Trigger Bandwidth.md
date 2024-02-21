@@ -8,7 +8,7 @@
 
 ก่อนอื่นให้ Add Template Cisco IOS by SNMP ลงไปใน Host ที่ต้องการก่อน
 
-จากนั้นไปที่ Data collection > Host > Traigger ของ  Host นั้นๆ > Create trigger 
+จากนั้นไปที่ Data collection > Host > Trigger ของ  Host นั้นๆ > Create trigger 
 
 ตั้งชื่อของ Trigger ที่ช่อง Name :
 
