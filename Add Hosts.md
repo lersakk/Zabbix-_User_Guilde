@@ -102,6 +102,7 @@ _Parameter :_
 Host Name       : ชื่ออุปกรณ์ที่เราจะ monitor 
 Template        : เลือก Template ที่ต้องการ 
 Host Groups     : group ที่ต้องการให้ host อยู่
+Interfaces      : SNMP
   IP address           : IP อุปการที่จะ monitor 
   DNS Name             : ไม่มีก็ไม่ต้องใส่
   port                 : 161
