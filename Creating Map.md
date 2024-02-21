@@ -21,7 +21,10 @@ To add elements  By clicking on the add at map elements and click on that elemen
 Type : 
 
 Label:
-
+~~~
+{HOSTNAME} ({HOST.IP})
+Latency: {?last(/{HOST.HOST}/icmppingsec)}
+~~~
 Change Icon :
 
 If everything is done, press apply
