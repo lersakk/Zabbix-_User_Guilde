@@ -46,9 +46,8 @@ And select the trigger that wants to be warned by the warning. The warning will 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/49b3ddda-0425-4de4-86b8-35f13b96a1e1)
 
 
-and you can create Tigger Other designs can be used such as making a Tigger to tell the Bandwith [Triger Bandwith](https://github.com/lersakk/ZabbixUserManual/blob/main/Triger%20Bandwith.md)
+and you can create Tigger Other designs can be used such as making a Tigger to tell the Bandwith [Triger Bandwith](https://github.com/lersakk/ZabbixUserManual/blob/main/Trigger%20Bandwidth.md)
  
-This is some important information. You can read more at [MORE](https://github.com/lersakk/ZabbixUserManual/blob/main/Trigger%20Bandwidth.md)
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/65456465-a83a-47f7-a5e1-1f71a2870c94)
 
