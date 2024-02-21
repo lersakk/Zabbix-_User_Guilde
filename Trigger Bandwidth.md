@@ -83,7 +83,7 @@
 
 เข้าไปที่ Monitoring > Map > เลือก Map ที่เราได้สร้างไว้
 
-สามารถดูวิธีการสร้างได้ที่  [Map](https://github.com/lersakk/ZabbixUserManual/blob/main/Map.md) 
+สามารถดูวิธีการสร้างได้ที่  [Map](https://github.com/lersakk/ZabbixUserManual/blob/main/Creating%20Map.md) 
 
 จากนั้น กด Edit map > เลือกอุปกรณ์ที่ต้องการ > กด Edit ที่ Collumn Links  ✨ ในที่นี้จะเลือก Links Router ✨
 
