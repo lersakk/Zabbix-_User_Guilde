@@ -57,7 +57,12 @@ sudo chmod +x line-notify
 
 การสร้าง Media ขึ้นมาให้ไปที่ Alerts >Media types > Create media type 
 จากนั้นกรอกข้อมูลตามรูปด้านล่าง ใน Script parameters ทั้ง 3 ตัวที่จะต้องใส่ไปมีดังนี้
-{ALERT.SENDTO},{ALERT.SUBJECT},{ALERT.MESSAGE}
+{ALERT.SENDTO}
+
+{ALERT.SUBJECT}
+
+{ALERT.MESSAGE}
+
 จากนั้นก็กด Add 
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/f7e30f01-af62-45df-a62f-7116d5d2bb2d)
