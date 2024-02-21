@@ -16,7 +16,6 @@
 ## Options
 #### [Triger Bandwith](https://github.com/lersakk/ZabbixUserManual/blob/main/Trigger%20Bandwidth.md)
 #### [Line Notify](https://github.com/lersakk/ZabbixUserManual/blob/main/Line%20Notify.md)
-#### [Create Map](https://github.com/lersakk/ZabbixUserManual/blob/main/Creating%20Map.md)
 #### [Add MIB](https://github.com/lersakk/ZabbixUserManual/blob/main/Add%20External%20MIBs.md)
 #### [Snmp TRAPS](https://github.com/lersakk/ZabbixUserManual/blob/main/SNMP%20Traps.md)
 
