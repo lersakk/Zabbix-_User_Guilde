@@ -52,7 +52,7 @@ sudo chmod +x line-notify
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/58595472-438a-4007-9eee-0e2f9e2311b5)
 
-เละสุดท้าย ทำการ Install curl ที่ CONTAINER zabbix-server
+และสุดท้าย ทำการ Install curl ที่ CONTAINER zabbix-server
 
 ~~~
 sudo docker exec -u root -ti {CONTAINER ID zabbix-server } bash
