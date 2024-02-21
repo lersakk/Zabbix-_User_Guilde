@@ -83,7 +83,7 @@ snmpwalk -v3 -u {USER-NAME} -l authPriv -a sha -A {PASSWORD} -x aes -X {PASSWORD
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/191dc9d4-7814-4d05-ad20-e1c1d2cf9c14)
 
-3. เข้าไปทีท Template ที่เราพึ่งสร้าง จากนั้น เพิ่ม Item ใน Templates โดยเลือกคำว่า item
+3. เข้าไปที่ Template ที่เราพึ่งสร้าง จากนั้น เพิ่ม Item ใน Templates โดยเลือกคำว่า item
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/2f37e176-43de-450f-b33f-f8199960893a)
 
