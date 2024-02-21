@@ -97,6 +97,7 @@ snmpwalk -v3 -u {USER-NAME} -l authPriv -a sha -A {PASSWORD} -x aes -X {PASSWORD
 ตัวอย่าง:
 
 - Name: Snmp traps
+- type: SNMP trap
 - Key: snmptrap[]
 - Log time format: yyyyMMdd.hhmmss
 ~~~
