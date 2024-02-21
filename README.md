@@ -11,6 +11,8 @@
 
 ### [4. SNMP TRAPS](https://github.com/lersakk/ZabbixUserManual/blob/main/SNMP%20Traps.md)
 
+### [5.Create Map](https://github.com/lersakk/ZabbixUserManual/blob/main/Creating%20Map.md)
+
 ## Options
 #### [Triger Bandwith](https://github.com/lersakk/ZabbixUserManual/blob/main/Trigger%20Bandwidth.md)
 #### [Line Notify](https://github.com/lersakk/ZabbixUserManual/blob/main/Line%20Notify.md)
