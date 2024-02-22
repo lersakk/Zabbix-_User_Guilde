@@ -6,11 +6,11 @@
 
 # SNMP Traps Settings in Zabbix
 
-## Edit the .env file to use external files
+## Edit the  .env file to use external files
 
 To make adding SNMP traps users easier, edit the.env file as follows:
 
-1. Open the.env file with the command:
+1. Open the .env file with the command:
 
 ```
 sudo nano zabbix-docker/.env
