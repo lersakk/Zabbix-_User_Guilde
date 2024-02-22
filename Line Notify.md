@@ -52,6 +52,10 @@ sudo chmod +x line-notify
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/58595472-438a-4007-9eee-0e2f9e2311b5)
 
+**can use chmod 755**
+
+<br>
+
 And finally, perform the Install curl at CONTAINER zabbix-server
 
 ~~~
