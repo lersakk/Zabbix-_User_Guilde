@@ -1,10 +1,6 @@
-<strong> <h1>
-<p>------------------------------------------------------------------------------</p>
-<p>-------------------------- Trigger Bandwidth ------------------------------</p>
-<p>------------------------------------------------------------------------------</p>
-</h1> </strong>
+![User Mannal (11)](https://github.com/lersakk/ZabbixUserManual/assets/106941759/fe059244-4bb6-464f-9668-e579705653de)
 
-# Trigger Bandwidth
+<h1> Trigger Bandwidth </h1>
 
 First add the Cisco IOS by SNMP Template to the desired Host
 
@@ -60,6 +56,7 @@ Go to Monitoring > Latest data
 Filter by selecting the desired host and pressing Show details and pressing Apply
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/d722785a-dc53-4f1c-8cb3-9d8d02e3e001)
+
 #
 
 Then select the desired interface to look at TAG VALUES > Interface 
@@ -67,16 +64,19 @@ Then select the desired interface to look at TAG VALUES > Interface
 ✨ here from select G0/1 ✨
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/06542edc-f316-4640-a721-738232a1da3a)
+
 #
 
 We will be able to know what the key of the desired interface is. From the green letters as shown in the picture below  
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/80e179c3-48c0-404e-a69a-0fc26dc5172f)
+
 #
 
 Example of creating a trigger 
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5c786ef8-f225-4c84-b0f9-0f181d2a6bc7)
+
 #
 
 Once the Trigger has been created, after that we will put the Trigger in the map that we have created
@@ -88,16 +88,18 @@ You can see how to create it at  [Map](https://github.com/lersakk/ZabbixUserManu
 Then press Edit map > select the desired device > press Edit at Collumn Links ✨ here you will select Links Router ✨
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/2e0db9c1-e582-4276-b301-289fe75bb464)
+
 #
 
 See Collumn Link indicators > Add
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/6f282086-0d55-4bc5-b09f-13cb2028ca15)
+
 #
 
 Select the Host we want and select the Trigger that we have created. Then press Select and press Apply and press Update on the Network maps page
 
- ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/6c3ef012-ad83-42d8-8b59-55fbb4bb77d3)
+![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/6c3ef012-ad83-42d8-8b59-55fbb4bb77d3)
  
 #
 
