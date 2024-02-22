@@ -1,8 +1,6 @@
-<strong> <h1>
-<p>------------------------------------------------------------------------------</p>
-<p>-------------------------- Import MIB to Zabbix --------------------------</p>
-<p>------------------------------------------------------------------------------</p>
-</h1> </strong>
+![User Mannal (1)](https://github.com/lersakk/ZabbixUserManual/assets/106941759/a530ebd3-ba1c-4208-a338-12626dd26e55)
+
+<h1> Import External MIBs to Zabbix </h1>
 <br>
 
 _Optional to Import MIB to Zabbix ( External Mibs )_
