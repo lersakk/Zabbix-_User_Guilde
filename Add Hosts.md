@@ -118,3 +118,6 @@ Interfaces      : SNMP
 #
 
 ***-กด Add  ที่ด้านขวาล่าง เพื่อ สร้าง Host***
+
+# Next Step to Setup SNMP Traps
+## [Setup SNMP Traps](https://github.com/lersakk/ZabbixUserManual/blob/main/SNMP%20Traps.md)
