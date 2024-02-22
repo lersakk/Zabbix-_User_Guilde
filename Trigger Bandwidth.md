@@ -64,7 +64,7 @@ Filter by selecting the desired host and pressing Show details and pressing Appl
 
 Then select the desired interface to look at TAG VALUES > Interface 
 
-✨ here, from select G0/1 ✨
+✨ here from select G0/1 ✨
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/06542edc-f316-4640-a721-738232a1da3a)
 #
