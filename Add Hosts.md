@@ -4,33 +4,33 @@
 <p>------------------------------------------------------------------------------</p>
 </h1> </strong>
 
-<h1>ตัวอย่างขั้นตอนการเพิ่มอุปกรณ์เครือข่ายเพื่อ Monitoring ค่าประสิทธิภาพในการทำงานของตัวอุปกรณ์</h1>
+<h1>Example of steps for adding network equipment to monitor the performance of the equipment</h1>
   
-## ขั้นตอนการ Add Host
-_มีการดำเนินการ 2 ที่ คือ บนอุปกรณ์ Network และ บน Zabbix_
+## Add Host steps
+_There are two operations: on Network devices and on Zabbix_
 
 #
 
 ## Part 1 Network Device Configuretion
 
 __Step 1 : Start__
-1) ต่อสาย Console เพื่อทำการกำหนดค่าบนตัวอุปกรณ์ Network
-2)	ใช้ Putty เพื่อทำการ Console เข้าตัว อุปกรณ์ Network
-3)	enable (ใช้คำสั่ง enable เพื่อเข้าสู่ Privilege Mode)
-4)	configure terminal (ใช้คำสั่ง configure terminal เพื่อเข้าสู่ Configuration Mode)
+1) Connect the console cable to configure the network device
+2) Use Putty to integrate the network device
+3) enable (use the enable command to enter Privilege Mode)
+4) configure terminal (use the configure terminal command to enter Configuration Mode)
 
-__Step 2 : การสร้าง snmp group__
+__Step 2 : Creating a snmp group__
 ~~~
 configure terminal
 snmp-server group {GROUP-NAME} v3 priv
 ~~~
 
-__Step 3 : การตรวจสอบ Group__
+__Step 3 : Group inspection__
 ~~~
 show snmp group
 ~~~
 
-__Step 4 : การสร้าง snmp user (ตัวอย่าง snmp version 3)__
+__Step 4 : Creating a snmp user (snmp version 3 example)__
 
 _Command :_
 ~~~
@@ -40,20 +40,20 @@ snmp-server user {USER-NAME} {GROUP-NAME} v3 auth sha {PASSWORD} priv aes 128 {P
 _Parameter :_
 
 ~~~
-USER-NAME   : ชื่อUser ที่ต้องการตั้ง
-GROUP-NAME  : ชื่อ group snmp ที่ตั้งไว้ ที่ต้องการให้ user อยู่
-v3          : snmp version 3
-Password    : รหัสผ่านที่ต้องการตั้ง
+USER-NAME  : Name of User you want to set
+GROUP-NAME : Set group snmp name that requires the user to stay
+v3         : snmp version 3
+Password   : Password you want to set
 ~~~
 
-__Step 5 : ตรวจสอบ User__
+__Step 5 : Check User__
 
 ~~~
 show snmp user
 ~~~
 
 
-__Step 6 : Config อุปกรณ์ Network เพื่อให้มีการเปิดใช้งาน SNMP__
+__Step 6 : Config Network device to have SNMP enabled__
 
 ~~~
 snmp-server enable traps
@@ -69,8 +69,8 @@ snmp-server host {IP-ADDRESS-SERVER} version 3 priv {USER-NAME}
 _Parameter :_
 
 ~~~
-IP-ADDRESS-SERVER   : IP ของ Ubuntu
-USER-NAME           : {USER-NAME} ที่ต้องการ
+IP-ADDRESS-SERVER   : Ubuntu IP
+USER-NAME           : {USER-NAME} desired
 ~~~
 
 <br>
@@ -78,19 +78,19 @@ USER-NAME           : {USER-NAME} ที่ต้องการ
 ## Part 2 Zabbix Server Configuretion
 
 
-**ไปที่หน้า zabbix**
+**Go to zabbix page**
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/4ff020bc-fe4a-49c2-9352-718a86a3ba60" width="100%">
 
 #
 
-**เลือก Data Collection กดไปที่ Hosts And กด create Host ที่ด้านขวาบน**
+**Select Data Collection Press on Hosts And Press create Host on the top right**
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/d901fb4d-faec-4e93-ad4e-271ad43e1a99" width="100%">
 
 #
 
-**กรอกข้อมูลที่จำเป็น**
+**Fill in the required information**
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/206450e4-2b09-469c-81a2-0e85dfbc0de2" width="100%">
 
@@ -99,14 +99,14 @@ USER-NAME           : {USER-NAME} ที่ต้องการ
 _Parameter :_
 
 ~~~   
-Host Name       : ชื่ออุปกรณ์ที่เราจะ monitor 
-Template        : เลือก Template ที่ต้องการ 
-Host Groups     : group ที่ต้องการให้ host อยู่
+Host Name       : The name of the device we will monitor 
+Template        : Select the desired template 
+Host Groups     : group that wants the host to be
 Interfaces      : SNMP
   IP address           : IP อุปการที่จะ monitor 
-  DNS Name             : ไม่มีก็ไม่ต้องใส่
+  DNS Name             : (If you don't have it, you don't have to wear it)
   port                 : 161
-  SNMP version         : ตามที่ได้สร้างในอุปกรณ์ Network
+  SNMP version         : As created on Network devices
   Security name        : {USER-NAME}
   Security level       : authPriv
   Auth protocol        : MD5,SHA1,SHA224,SHA256,SHA384,SHA521
@@ -117,7 +117,7 @@ Interfaces      : SNMP
 
 #
 
-***-กด Add  ที่ด้านขวาล่าง เพื่อ สร้าง Host***
+***-Press Add at the bottom right to create a Host***
 
 # Next Step to Setup SNMP Traps
 ## [Setup SNMP Traps](https://github.com/lersakk/ZabbixUserManual/blob/main/SNMP%20Traps.md)
