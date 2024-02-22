@@ -113,7 +113,7 @@ In:{?last(/Swicth1/net.if.in[ifHCInOctets.10101])} /  Out:{?last(/Swicth1/net.if
 Swicth1:Gi0/1 <> Fa0/1(Router)
 ~~~
 
-The above script is only an example. You can change the desired interface by replacing the key. An example can be found at : [Key Interface](https://github.com/lersakk/ZabbixUserManual/blob/main/Trigger%20Bandwidth.md#%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%94%E0%B8%B9-key-%E0%B8%82%E0%B8%AD%E0%B8%87-interface-%E0%B8%82%E0%B8%AD%E0%B8%87-host-%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3)
+The above script is only an example. You can change the desired interface by replacing the key. An example can be found at : [Key Interface](https://github.com/lersakk/ZabbixUserManual/blob/main/Trigger%20Bandwidth.md#viewing-the-key-of-the-desired-hosts-interface)
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5671100c-8b99-41b6-a7a1-4af2b555214d)
 
