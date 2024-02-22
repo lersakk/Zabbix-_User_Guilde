@@ -113,7 +113,7 @@ In:{?last(/Swicth1/net.if.in[ifHCInOctets.10101])} /  Out:{?last(/Swicth1/net.if
 Swicth1:Gi0/1 <> Fa0/1(Router)
 ~~~
 
-Script ข้างต้นเป็นเพียงตัวอย่างเท่านั้น คุณสามารถเปลี่ยนแปลง Interface ที่ต้องการได้จากการนำ Key มาใส่แทนที่ สามารถดูตัวอย่างได้ที่ : [Key Interface](https://private-user-images.githubusercontent.com/136166133/303964695-80e179c3-48c0-404e-a69a-0fc26dc5172f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg1NzYwOTAsIm5iZiI6MTcwODU3NTc5MCwicGF0aCI6Ii8xMzYxNjYxMzMvMzAzOTY0Njk1LTgwZTE3OWMzLTQ4YzAtNDA0ZS1hNjlhLTBmYzI2ZGM1MTcyZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIyMlQwNDIzMTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kM2JiODQ0OGRlMDZlMWZiNzk5OTU2MWJiMjdlMThkYmYzNDZhODVhMDQxMDlhN2E2ZWQ1YTg2OGYxMGZmYzMxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.lhe0L2oopcvv0nCJX6BnClzX38O13f_xhyd9rnP_KJ0)
+Script ข้างต้นเป็นเพียงตัวอย่างเท่านั้น คุณสามารถเปลี่ยนแปลง Interface ที่ต้องการได้จากการนำ Key มาใส่แทนที่ สามารถดูตัวอย่างได้ที่ : [Key Interface](https://github.com/lersakk/ZabbixUserManual/blob/main/Trigger%20Bandwidth.md#%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%94%E0%B8%B9-key-%E0%B8%82%E0%B8%AD%E0%B8%87-interface-%E0%B8%82%E0%B8%AD%E0%B8%87-host-%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3)
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5671100c-8b99-41b6-a7a1-4af2b555214d)
 
