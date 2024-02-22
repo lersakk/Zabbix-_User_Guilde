@@ -1,8 +1,4 @@
-<strong> <h1>
-<p>------------------------------------------------------------------------------</p>
-<p>------------------------------- Line Notify ---------------------------------</p>
-<p>------------------------------------------------------------------------------</p>
-</h1> </strong>
+![User Mannal (9)](https://github.com/lersakk/ZabbixUserManual/assets/106941759/3441daa7-f7cd-474a-a7b2-64b53443f190)
 
 # Setting to send notifications to Line Notify
 
@@ -19,8 +15,7 @@ For example
 sudo nano line-notify
 ~~~
 
-
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/1adb47c4-bf9d-49a3-95ea-5715b9a37aab)
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/1adb47c4-bf9d-49a3-95ea-5715b9a37aab" width="100%">
 
 Then type the script as below
 
@@ -140,7 +135,6 @@ Send only to Select the Media types that we have left to use Line notify. Click 
 Set Subject and Message as desired  
 
 
-
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/6849756e-c0f5-4f56-ba86-a9a518e84815)
 
 
@@ -148,7 +142,6 @@ Then go to Recovery operations. Configure it by clicking Add. Let Operation be S
 Select Send to Users as the User you want to send to Line 
 Send only to Select the Media types that we have left to use Line notify. Click on Custom message
 Set Subject and Message as desired  
-
 
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/d3a70515-76ae-4b70-b90e-8fe373cbd763)
