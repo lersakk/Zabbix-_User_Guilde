@@ -1,4 +1,4 @@
-![User Mannal (2)](https://github.com/lersakk/ZabbixUserManual/assets/106941759/92806df8-220d-445c-80cc-f377dba5eb26)
+![User Mannal (7)](https://github.com/lersakk/ZabbixUserManual/assets/106941759/c5681fa1-cb5a-4e41-b99c-00445632d8b4)
 
 <h1>Example of steps for adding network equipment to monitor the performance of the equipment</h1>
 
