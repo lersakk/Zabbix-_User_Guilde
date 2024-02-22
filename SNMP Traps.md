@@ -57,7 +57,7 @@ authUser log,execute,net {USER-NAME} priv
 ```
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/9cc65eb7-805a-4815-8e02-dc242190d7a7" width="100%">
 
-ข้อมูลเหล่านี้มาจากการสร้าง [ผู้ใช้งาน SNMP](https://github.com/lersakk/ZabbixUserManual/blob/main/Add%20Host.md)
+ข้อมูลเหล่านี้มาจากการสร้าง [ผู้ใช้งาน SNMP](https://github.com/lersakk/ZabbixUserManual/blob/main/Add%20Hosts.md)
 
 ## ติดตั้งและใช้งาน SNMP และ Run snmpwalk
 
