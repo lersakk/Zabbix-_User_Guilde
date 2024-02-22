@@ -1,19 +1,16 @@
-<strong> <h1>
-<p>------------------------------------------------------------------------------</p>
-<p>--------------------------------- Add Host ---------------------------------</p>
-<p>------------------------------------------------------------------------------</p>
-</h1> </strong>
+![User Mannal (2)](https://github.com/lersakk/ZabbixUserManual/assets/106941759/92806df8-220d-445c-80cc-f377dba5eb26)
 
 <h1>Example of steps for adding network equipment to monitor the performance of the equipment</h1>
-  
-## Add Host steps
-_There are two operations: on Network devices and on Zabbix_
 
-#
+<h2>Steps to Add Hosts</h2>
+
+_There are two operations : on Network devices and on Zabbix_
+
+<br>
 
 ## Part 1 Network Device Configuretion
 
-__Step 1 : Start__
+__Step 1 : Setup Device__
 1) Connect the console cable to configure the network device
 2) Use Putty to integrate the network device
 3) enable (use the enable command to enter Privilege Mode)
@@ -46,12 +43,11 @@ v3         : snmp version 3
 Password   : Password you want to set
 ~~~
 
-__Step 5 : Check User__
+__Step 5 : Verify Lists of "User"__
 
 ~~~
 show snmp user
 ~~~
-
 
 __Step 6 : Config Network device to have SNMP enabled__
 
@@ -69,7 +65,7 @@ snmp-server host {IP-ADDRESS-SERVER} version 3 priv {USER-NAME}
 _Parameter :_
 
 ~~~
-IP-ADDRESS-SERVER   : Ubuntu IP
+IP-ADDRESS-SERVER   : Ubuntu IP-Address
 USER-NAME           : {USER-NAME} desired
 ~~~
 
@@ -115,9 +111,9 @@ Interfaces      : SNMP
   Privacy passphrase   : {PASSWORD}
 ~~~
 
-#
+<br>
 
-***-Press Add at the bottom right to create a Host***
+***Press Add at the bottom right to create a Host***
 
 # Next Step to Setup SNMP Traps
 ## [Setup SNMP Traps](https://github.com/lersakk/ZabbixUserManual/blob/main/SNMP%20Traps.md)
