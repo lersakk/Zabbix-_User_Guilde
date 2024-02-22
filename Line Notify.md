@@ -64,7 +64,7 @@ apt install curl
 ~~~
 
 
-## สร้าง Media 
+## Create Media
 
 To create Media, go to Alerts > Media types > Create media type 
 Then fill in the information as shown in the picture below in the 3 Script parameters that must be entered as follows
