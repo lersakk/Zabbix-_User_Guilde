@@ -19,7 +19,7 @@ __Step 2 : ไปที่ zabbix__
 
 <br>
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/111458085/44eeb05e-8dfc-43c4-90a9-528182c09fcf)
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/111458085/44eeb05e-8dfc-43c4-90a9-528182c09fcf" width="100%">
 
 <br>
 
