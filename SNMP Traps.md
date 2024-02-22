@@ -115,3 +115,9 @@ snmpwalk -v3 -u {USER-NAME} -l authPriv -a sha -A {PASSWORD} -x aes -X {PASSWORD
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5d5a7bb2-2ec7-4bb1-929b-717fc5b9f312)
 
+
+
+
+
+# Next Step to Create Map
+## [How to Create Map](https://github.com/lersakk/ZabbixUserManual/blob/main/Creating%20Map.md)
