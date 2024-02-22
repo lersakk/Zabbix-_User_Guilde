@@ -20,6 +20,6 @@
 
 
 ## Template recommend
-#### [How To Import Template](https://github.com/komeiy/Smokeping_Zabbix)
+#### [How To Import Template](https://github.com/lersakk/ZabbixUserManual/blob/main/Import%20Template.md)
 #### [Ping Smoke](https://github.com/komeiy/Smokeping_Zabbix)
 
