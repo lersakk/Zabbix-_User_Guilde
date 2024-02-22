@@ -103,7 +103,7 @@ Host Name       : The name of the device we will monitor
 Template        : Select the desired template 
 Host Groups     : group that wants the host to be
 Interfaces      : SNMP
-  IP address           : IP อุปการที่จะ monitor 
+  IP address           : IP device to monitor  
   DNS Name             : (If you don't have it, you don't have to wear it)
   port                 : 161
   SNMP version         : As created on Network devices
