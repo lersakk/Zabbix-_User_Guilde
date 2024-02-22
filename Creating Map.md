@@ -56,3 +56,12 @@ and you can create Tigger Other designs can be used such as making a Tigger to t
 
 ![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/65456465-a83a-47f7-a5e1-1f71a2870c94)
 
+
+
+
+
+# Option for Map
+## [Setup for User Trigger Bandwidth](https://github.com/lersakk/ZabbixUserManual/blob/main/Trigger%20Bandwidth.md)
+
+# Option Alert
+## [Setup for User Line-Notify](https://github.com/lersakk/ZabbixUserManual/blob/main/Line%20Notify.md)
