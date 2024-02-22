@@ -1,6 +1,7 @@
-![User Mannal (1)](https://github.com/lersakk/ZabbixUserManual/assets/106941759/a530ebd3-ba1c-4208-a338-12626dd26e55)
+![User Mannal (12)](https://github.com/lersakk/ZabbixUserManual/assets/106941759/f58b9632-0fdf-4472-aab0-81ea85af42dd)
 
 <h1> Import External MIBs to Zabbix </h1>
+
 <br>
 
 _Optional to Import MIB to Zabbix ( External Mibs )_
