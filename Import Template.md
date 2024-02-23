@@ -2,35 +2,44 @@
 
 <h1> Import Template </h1>
 
-  
-## Import Template steps
+## Step 1 : Download Template File.
 
+_Resource of Template that you can use_ ➡️ [Templates](https://github.com/zabbix/community-templates)
 
-__Step 1 : ดาวน์โหลด Template ที่ต้องการใช้มาไว้ที่เครื่อง__
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/7eced703-7452-44a2-90ef-8ce34f2155f2" width="100%">
 
+#
+_Resource of Template On local file._
 
-__Step 2 : ไปที่ zabbix__
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/7e72d45d-7348-400a-ac97-b1b683b9ca32" width="100%">
 
-1.) ไปที่ Data collection >> Template >> Import
+#
 
-2.)กด choose file
+## Step 2 : Go to zabbix and follow this.
 
-3.)เลือก Template ที่ต้องการใช้ ที่ดาวน์โหลดไว้
+1) Go to menu Data collection >> Template >> Import
 
-<br>
-
-<img src="https://github.com/lersakk/ZabbixUserManual/assets/111458085/44eeb05e-8dfc-43c4-90a9-528182c09fcf" width="100%">
-
-<br>
-
-![image](https://github.com/lersakk/ZabbixUserManual/assets/111458085/fa2dad05-5717-432d-a676-bb870f17e092)
+   <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/a651f48a-bb5c-4037-b0b2-80288bc37d7a" width="100%">
 
 <br>
 
-4.) กด import
+3) Click "choose file"
+
+   <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/9c16186d-2350-4e90-aa1c-d904f0aef2d6" width="100%">
 
 <br>
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/111458085/e2968c76-aa55-467c-9df8-457b93200afc)
+5) Select Template that you want to use (On folder of file template)
 
+   <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/bcf1fa34-9279-46f9-99a8-8d34cd961f68" width="100%">
+   
+   <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/38da36f5-49e9-4e80-b6a7-26e5fe8b4b1c" width="100%">
+   
+<br>
+
+4) Click "import"
+
+   <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/406eaa24-4c0d-403e-8c22-f4bce5aba65d" width="100%">
+
+<br>
 
