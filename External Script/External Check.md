@@ -42,21 +42,23 @@ __ใช้คำสั่งเพื่อให้สิทธ์แก่ไ
 
 __Command :__
 ~~~
-sudo chmod 755 dns_query_time.sh
+sudo chmod 744 dns_query_time.sh
 ~~~
 
 ## 2. การติดตั้งแพคเกจ dnsutils บน Container
 _ในการ Monitor ค่าประสิทธิภาพในการ Query ข้อมูลชื่อโดเมนบนระบบ DNS Server บน Container ของ Docker จำเป็นที่จะต้องใช้คำสั่ง dig และจะเป็นต้องมีแพคเกจ dnsutils_
 
-__Step 1 ใช้คำสั่งเพื่อแสดง List ของ Container ที่ทำงานอยู่__
-
+__Step 1 ใช้คำสั่งเพื่อแสดง List ของ Container ที่ทำงานอยู่__  
+  
 __Command :__
 ~~~
 sudo docker ps
 ~~~
 
 __Step 2 ทำการ Execute เข้าไปใน Container__
+
 __Command :__
+
 ~~~
 sudo docker exec -u root -ti [CONTAINER-ID] bash
 ~~~
@@ -86,8 +88,7 @@ Template groups : Template groups (Group ที่ต้องการ)
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/70b949d6-61cb-4133-b435-d6ab2594a3cc" width="100%">
 
-__.__
-
+#
 __Step 3 ไปที่ Template ที่สร้าง -> ไปที่ Create Item ใส่ข้อมูลดังนี้__
 ~~~
 Name : DNS Query Time
@@ -99,7 +100,7 @@ Update interval : 1m
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/45eaa6a0-21b0-46e7-878a-ae181f4c99a7" width="100%">
 
-__.__
+#
 
 __Step 4 ทำการกด “Add”__
 
