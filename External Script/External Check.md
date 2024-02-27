@@ -1,10 +1,10 @@
 ![User Mannal (14)](https://github.com/lersakk/ZabbixUserManual/assets/106941759/53c0ee98-f0c9-4e97-9fa7-0410b84ffee8)
 
-<h1>ตัวอย่างการทำ External Script เพื่อ Monitor ค่าประสิทธิภาพในการ Query ข้อมูลชื่อโดเมนบนระบบ DNS Server</h1>
+<h1>Example of making an External Script to monitor the efficiency of querying domain name information on the DNS Server system.</h1>
 
-## 1. การสร้าง File ที่ Directory ของ External Script
+## 1. Use the command to go to the directory where the external script files are stored.
 
-__Step 1 ใช้คำสั่งเพื่อเข้าไปที่ Directory ที่เก็บไฟล์ Script ภายนอก__
+__Step 1 Use the command to go to the directory where the external script files are stored.__
 
 __Command :__
 
@@ -12,7 +12,7 @@ __Command :__
 cd zabbix-docker/zbx_env/usr/lib/zabbix/externalscripts/
 ~~~
 
-__Step 2 ใช้คำสั่งเพื่อสร้างไฟล์ Script__
+__Step 2 Use the command to create the Script file.__
 
 __Command :__
 
@@ -20,7 +20,7 @@ __Command :__
 nano dns_query_time.sh
 ~~~
 
-__Step 3 ทำการเพิ่มข้อมูลบนไฟล์ ดังนี้__
+__Step 3 Add information to the file as follows.__
 
 __Script :__
 ~~~
@@ -36,26 +36,26 @@ query_time=$(echo "$dig_output" | grep "Query time:" | awk '{print $4}')
 echo "$query_time"
 ~~~
 
-__Step 4 กดปุ่ม “Ctrl+x”  และ พิมพ์ “Y” เพื่อบันทึกไฟล์__
+__Step 4 Press “Ctrl+x” and type “Y” to save the file.__
 
-__ใช้คำสั่งเพื่อให้สิทธ์แก่ไฟล์ Script__
+__Use commands to grant permissions to the Script file.__
 
 __Command :__
 ~~~
 sudo chmod 744 dns_query_time.sh
 ~~~
 
-## 2. การติดตั้งแพคเกจ dnsutils บน Container
-_ในการ Monitor ค่าประสิทธิภาพในการ Query ข้อมูลชื่อโดเมนบนระบบ DNS Server บน Container ของ Docker จำเป็นที่จะต้องใช้คำสั่ง dig และจะเป็นต้องมีแพคเกจ dnsutils_
+## 2. Installing the dnsutils package on the Container
+_To monitor the performance of querying domain name information on the DNS Server in Docker containers, it is necessary to use the dig command and the dnsutils package._
 
-__Step 1 ใช้คำสั่งเพื่อแสดง List ของ Container ที่ทำงานอยู่__  
+__Step 1 Use this command to display a list of active containers.__  
   
 __Command :__
 ~~~
 sudo docker ps
 ~~~
 
-__Step 2 ทำการ Execute เข้าไปใน Container__
+__Step 2 Execute into the Container__
 
 __Command :__
 
@@ -63,7 +63,7 @@ __Command :__
 sudo docker exec -u root -ti [CONTAINER-ID] bash
 ~~~
 
-__Step 3 หลังจากเข้ามาใน Container ใช้คำสั่งเพื่อทำการติดตั้ง dnsutils และรอการติดตั้งจนเสร็จสมบูรณ์__
+__Step 3 After entering the Container, use the command to install dnsutils and wait for the installation to complete.__
 
 __Command :__
 ~~~
@@ -75,11 +75,11 @@ __Command :__
 apt install dnsutils 
 ~~~
 
-## 3. การกำหนดค่าการแสดงผลบน Zabbix Web Interface
+## 3. Configuring the display on the Zabbix Web Interface
 
-__Step 1 ไปที่หน้า Zabbix Web Interface เพื่อกำหนดค่า__
+__Step 1 Go to the Zabbix Web Interface page to configure it.__
 
-__Step 2 ไปที่แท็บ Data collection -> Templates -> Create Templates และใส่ข้อมูลดังนี้__
+__Step 2 Go to the Data collection -> Templates -> Create Templates tab and enter the following information:__
 
 ~~~
 Template name : External Check
@@ -89,11 +89,11 @@ Template groups : Template groups (Group ที่ต้องการ)
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/70b949d6-61cb-4133-b435-d6ab2594a3cc" width="100%">
 
 #
-__Step 3 ไปที่ Template ที่สร้าง -> ไปที่ Create Item ใส่ข้อมูลดังนี้__
+__Step 3 Go to the template you created -> go to Create Item and enter the following information:__
 ~~~
 Name : DNS Query Time
 Type : Zabbix agent
-Key : dns_query_time.sh (ชื่อไฟล์ที่ทำการสร้าง)
+Key : dns_query_time.sh (Name of the file created)
 Type of information : Numeric (float)
 Update interval : 1m
 ~~~
@@ -102,14 +102,7 @@ Update interval : 1m
 
 #
 
-__Step 4 ทำการกด “Add”__
+__Step 4 Press “Add”__
 
-__Step 5 ทำการเพิ่ม Template เข้าไปที่ Host เพื่อทำการ Monitor__ ([How to Add Template to Hosts](https://github.com/lersakk/ZabbixUserManual/blob/main/SNMP%20Traps.md#%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%A1%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%95%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%9A-snmp-traps))
-
-
-
-
-
-
-
+__Step 5 Add a template to the Host for monitoring.__ ([How to Add Template to Hosts](https://github.com/lersakk/ZabbixUserManual/blob/main/SNMP%20Traps.md#%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%A1%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%95%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%9A-snmp-traps))
 
