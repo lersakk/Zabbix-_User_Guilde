@@ -1,15 +1,18 @@
 ![User Mannal (9)](https://github.com/lersakk/ZabbixUserManual/assets/106941759/3441daa7-f7cd-474a-a7b2-64b53443f190)
 
-# Setting to send notifications to Line Notify
+# 1. Setting to send notifications to Line Notify
 
-Creating Script for sending notifications to Line Notify to 
+__Step 1 : Use the command to go to the directory where the external script files are stored.__ 
+
+__Command :__
 
 ~~~
-cd  zabbix-docker/zbx_env/usr/lib/zabbix/alertscripts
+cd zabbix-docker/zbx_env/usr/lib/zabbix/externalscripts/
 ~~~
 
-Then create a Script file with the nano command followed by the desired name here used as Line-notify 
-For example
+__Step 2 : Use the command to create the Script file.__
+
+_For example_
 
 ~~~
 sudo nano line-notify
@@ -17,14 +20,18 @@ sudo nano line-notify
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/1adb47c4-bf9d-49a3-95ea-5715b9a37aab" width="100%">
 
-Then type the script as below
+__Step 3 : Add information to the file using the nano [FILE-NAME] command. Here the name is Line-notify.__
+
+__Command :__
 
 ~~~
+sudo nano line-notify
+~~~
+
+__Script :__
+~~~
 #!/bin/bash
- 
-# curl -X POST -H "Authorization: Bearer $1" \
-#      -F "message=$2" https://notify-api.line.me/api/notify
- 
+
 # Extract parameters from Zabbix alert
 send_to="$1"
 subject="$2"
@@ -36,18 +43,21 @@ formatted_message="Subject: $subject\n\n$message"
 # Send the message via Line Notify
 curl -X POST -H "Authorization: Bearer $send_to" \
      -F "message=$formatted_message" https://notify-api.line.me/api/notify
-
 ~~~
 
-Then enter the command below to grant permissions to the script file
+__Step 4 : Press “Ctrl+x” and type “Y” to save the file.__
+
+__Step 5 : Use commands to grant permissions to the Script file.__
+
+__Command :__
 
 ~~~
-sudo chmod +x line-notify
+sudo chmod +X line-notify
 ~~~
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/58595472-438a-4007-9eee-0e2f9e2311b5)
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/58595472-438a-4007-9eee-0e2f9e2311b5" width="100%">
 
-**can use chmod 755**
+__***Recommend granting permissions as needed. chmod 744__
 
 <br>
 
@@ -62,92 +72,129 @@ apt-get update
 apt install curl
 ~~~
 
+## 2. Create Line Notify
 
-## Create Media
+__Step 1 : Go to [Line-Notify](https://notify-bot.line.me/)__
 
-To create Media, go to Alerts > Media types > Create media type 
-Then fill in the information as shown in the picture below in the 3 Script parameters that must be entered as follows
+__Step 2 : press Scan QR code from the website page on Application Line to add Line notify to be our friend__
 
-
-{ALERT.SENDTO}
-
-{ALERT.SUBJECT}
-
-{ALERT.MESSAGE}
-
-Then press Add 
-
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/f7e30f01-af62-45df-a62f-7116d5d2bb2d)
-
-## Create Line Notify
-
-Go to [Line-Notify](https://notify-bot.line.me/) press Scan QR code from the website page on Application Line to add Line notify to be our friend
-
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/138e3c93-13dd-4667-be87-dd044f596767)
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/86aa77d2-7c40-41bf-a936-632905637bde" width="100%">
 
 
-Then Login and press Drop down list from our Line name. Select My page
+__Step 3 : Then Login and press Drop down list from our Line name. Select My page__
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/b048188b-8681-48f4-a3ed-a609810f48d2)
+#
 
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/b048188b-8681-48f4-a3ed-a609810f48d2" width="100%">
 
-Go to Generate token
+#
 
+__Step 4 : Go to Generate token__
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/36239c2f-0fad-442b-88d0-2bd3c746bd37)
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/7113454f-d4c6-481d-9e56-c7ea381b97f1" width="100%">
 
-Enter the name of the Token. This name will appear in front of the notification page, such as entering Test Notify: This name will appear in front of the message. The message looks like Test Notify::followed by the message from the system that was sent. After that, select the chat you want to send. Notification and press Generate token
+#
 
+__Step 5 : Enter the name of the Token.__
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/715979c4-4f46-4672-9ef0-eaf6f3b29162)
+_This name will appear in front of the notification page, such as entering Test Notify: This name will appear in front of the message. The message looks like Test Notify::followed by the message from the system that was sent. 
 
-Press Copy Token that you received
+__Step 5 (Cont.) : After that, select the chat you want to send. Notification and press Generate token__
 
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/44361b98-1f6d-464d-8f03-78ffcb2b6a1a" width="50%">
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/4772117a-20d0-4faa-b80e-f83a2218358c)
+#
 
+__Step 6 : Press Copy Token that you received__
 
-and go to our Line application to add Line notify to the group chat selected during Generate token
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/eab67553-e9e8-4fe5-9794-70085e6685ef" width="50%">
 
-
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/46b4228b-5e69-40fc-82fb-03382ac0816c)
-
-After that, it was scheduled to be sent to Line  
-By going to Users > Users > select User > Media > add
-Select Type as Line-notify Send to. Put in the copied token and press Add to finish
-
-
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/82f8f40e-88f7-421b-8d02-5a10e3a34e07)
-
-## ADD Actions Triger  
-
-Go to Alerts > Actions > Trigger actions > Create action
-
-Then name define Type of calculation and Conditions as desired 
+#
 
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/73cfa7e8-3599-4f1f-827a-9256134f48e1)
+__Step 7 : Go to our Line application to add Line notify to the group chat selected during Generate token__
+
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/46b4228b-5e69-40fc-82fb-03382ac0816c" width="50%">
+
+#
+
+<br>
+
+## 3. Create Media
+
+__Step 1 : To create Media, go to Alerts > Media types > Create media type__
+
+__Step 2 : Then fill in the information as shown in the picture below in the 3 Script parameters that must be entered as follows__
+
+~~~
+Value :
+   {ALERT.SENDTO}
+   {ALERT.SUBJECT}
+   {ALERT.MESSAGE}
+~~~
+
+__Step 3 : Then press Add__
+
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/f7e30f01-af62-45df-a62f-7116d5d2bb2d" width="100%">
+
+#
+
+<br>
+
+## 4. Adding Media Line Notify to User
+
+_After that, it was scheduled to be sent to Line_
+
+__Step 1 : Going to Users > Users > select User > Media > add
+Select Type as Line-notify Send to. Put in the copied token and press Add to finish__
+
+~~~
+Type : Line-notify
+Send to : กรอก Token ที่ทำการ Generate ไว้
+~~~
+
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/106941759/b590a831-8c31-4525-8143-9090c09a2622" width="50%">
+
+#
+
+__Step 2 : กด Add__
 
 
-and go to Operations, set Operations by clicking on Add
-Select Send to Users as the User you want to send to Line 
-Send only to Select the Media types that we have left to use Line notify. Click on Custom message
-Set Subject and Message as desired  
+<br>
 
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/6849756e-c0f5-4f56-ba86-a9a518e84815)
+## 5. ADD Actions Triger  
+
+__Step 1 : Go to Alerts > Actions > Trigger actions > Create action__
+
+__Step 2 : Then name define Type of calculation and Conditions as desired__
+
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/73cfa7e8-3599-4f1f-827a-9256134f48e1" width="100%">
+
+#
+
+__Step 3 : Go to Operations, set Operations by clicking on Add__
+
+_Select Send to Users as the User you want to send to Line 
+Send only to Select the Media types that we have left to use Line notify. Click on Custom message_
+
+___Set Subject and Message as desired___
+
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/6849756e-c0f5-4f56-ba86-a9a518e84815" width="50%">
+
+#
+
+__Step 4 : Then go to Recovery operations. Configure it by clicking Add. Let Operation be Send message__
+
+_Select Send to Users as the User you want to send to Line 
+Send only to Select the Media types that we have left to use Line notify. Click on Custom message Set Subject and Message as desired_
 
 
-Then go to Recovery operations. Configure it by clicking Add. Let Operation be Send message
-Select Send to Users as the User you want to send to Line 
-Send only to Select the Media types that we have left to use Line notify. Click on Custom message
-Set Subject and Message as desired  
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/d3a70515-76ae-4b70-b90e-8fe373cbd763" width="50%">
 
-
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/d3a70515-76ae-4b70-b90e-8fe373cbd763)
-
+#
 
 ## Example notification from LINE notify 
 
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/b7f022a7-d891-4cf9-8b5f-a30277546cc6" width="50%">
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/b7f022a7-d891-4cf9-8b5f-a30277546cc6)
