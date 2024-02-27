@@ -4,7 +4,7 @@
 
 __Step 1 : Use the command to go to the directory where the external script files are stored.__ 
 
-__Command :__
+___Command :___
 
 ~~~
 cd zabbix-docker/zbx_env/usr/lib/zabbix/externalscripts/
@@ -22,7 +22,7 @@ sudo nano line-notify
 
 __Step 3 : Add information to the file using the nano [FILE-NAME] command. Here the name is Line-notify.__
 
-__Command :__
+___Command :___
 
 ~~~
 sudo nano line-notify
@@ -49,7 +49,7 @@ __Step 4 : Press “Ctrl+x” and type “Y” to save the file.__
 
 __Step 5 : Use commands to grant permissions to the Script file.__
 
-__Command :__
+___Command :___
 
 ~~~
 sudo chmod +X line-notify
@@ -59,14 +59,18 @@ sudo chmod +X line-notify
 
 __***Recommend granting permissions as needed. chmod 744__
 
+
 <br>
 
-And finally, perform the Install curl at CONTAINER zabbix-server
 
+__Step 6 : Finally, perform the Install curl at CONTAINER zabbix-server__
+
+___Command On Local:___
 ~~~
 sudo docker exec -u root -ti {CONTAINER ID zabbix-server } bash
 ~~~
 
+___Command On Container:___
 ~~~
 apt-get update
 apt install curl
@@ -111,14 +115,15 @@ __Step 6 : Press Copy Token that you received__
 
 #
 
-
 __Step 7 : Go to our Line application to add Line notify to the group chat selected during Generate token__
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/46b4228b-5e69-40fc-82fb-03382ac0816c" width="50%">
 
 #
 
+
 <br>
+
 
 ## 3. Create Media
 
@@ -139,7 +144,9 @@ __Step 3 : Then press Add__
 
 #
 
+
 <br>
+
 
 ## 4. Adding Media Line Notify to User
 
