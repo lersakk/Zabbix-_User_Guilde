@@ -55,7 +55,7 @@ And press Add to add Trigger
 Go to Monitoring > Latest data 
 Filter by selecting the desired host and pressing Show details and pressing Apply
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/d722785a-dc53-4f1c-8cb3-9d8d02e3e001)
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/d722785a-dc53-4f1c-8cb3-9d8d02e3e001" width="100%">
 
 #
 
@@ -63,19 +63,19 @@ Then select the desired interface to look at TAG VALUES > Interface
 
 ✨ here from select G0/1 ✨
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/06542edc-f316-4640-a721-738232a1da3a)
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/06542edc-f316-4640-a721-738232a1da3a" width="100%">
 
 #
 
 We will be able to know what the key of the desired interface is. From the green letters as shown in the picture below  
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/80e179c3-48c0-404e-a69a-0fc26dc5172f)
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/80e179c3-48c0-404e-a69a-0fc26dc5172f" width="100%">
 
 #
 
 Example of creating a trigger 
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5c786ef8-f225-4c84-b0f9-0f181d2a6bc7)
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/5c786ef8-f225-4c84-b0f9-0f181d2a6bc7" width="100%">
 
 #
 
@@ -87,19 +87,19 @@ You can see how to create it at  [Map](https://github.com/lersakk/ZabbixUserManu
 
 Then press Edit map > select the desired device > press Edit at Collumn Links ✨ here you will select Links Router ✨
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/2e0db9c1-e582-4276-b301-289fe75bb464)
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/2e0db9c1-e582-4276-b301-289fe75bb464" width="100%">
 
 #
 
 See Collumn Link indicators > Add
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/6f282086-0d55-4bc5-b09f-13cb2028ca15)
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/6f282086-0d55-4bc5-b09f-13cb2028ca15" width="100%">
 
 #
 
 Select the Host we want and select the Trigger that we have created. Then press Select and press Apply and press Update on the Network maps page
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/6c3ef012-ad83-42d8-8b59-55fbb4bb77d3)
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/6c3ef012-ad83-42d8-8b59-55fbb4bb77d3" width="100%">
  
 #
 
@@ -117,5 +117,4 @@ Swicth1:Gi0/1 <> Fa0/1(Router)
 
 The above script is only an example. You can change the desired interface by replacing the key. An example can be found at : [Key Interface](https://github.com/lersakk/ZabbixUserManual/blob/main/Trigger%20Bandwidth.md#viewing-the-key-of-the-desired-hosts-interface)
 
-![image](https://github.com/lersakk/ZabbixUserManual/assets/136166133/5671100c-8b99-41b6-a7a1-4af2b555214d)
-
+<img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/5671100c-8b99-41b6-a7a1-4af2b555214d" width="100%">
