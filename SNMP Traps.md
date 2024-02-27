@@ -20,7 +20,7 @@ SNMPTRAP_DIRECTORY=./Dockerfiles/snmptraps/ubuntu/conf/etc/snmp/snmptrapd.conf
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/a13c7ae3-522e-429d-be82-b07780d863bf" width="100%">
 
-#
+<br>
 
 ## Add command in composition_zabbix_components.yaml
 
@@ -40,7 +40,7 @@ sudo nano zabbix-docker/compose_zabbix_components.yaml
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/1324003c-54a9-4fff-90d4-e5d214d98005" width="100%">
 
-#
+<br>
 
 ## Add users for network devices
 
@@ -59,7 +59,7 @@ authUser log,execute,net {USER-NAME} priv
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/9cc65eb7-805a-4815-8e02-dc242190d7a7" width="100%">
 
-#
+<br>
 
 These data come from the creation [ผู้ใช้งาน SNMP](https://github.com/lersakk/ZabbixUserManual/blob/main/Add%20Hosts.md)
 
@@ -83,25 +83,25 @@ snmpwalk -v3 -u {USER-NAME} -l authPriv -a sha -A {PASSWORD} -x aes -X {PASSWORD
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/d3fa01b6-d0d5-4769-a46b-78b225453950" width="100%">
 
-#
+<br>
 
 2. Create a Template name and select Template groups, then press Add
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/191dc9d4-7814-4d05-ad20-e1c1d2cf9c14" width="100%">
 
-#
+<br>
 
 3. Go to the template we just created, then add items to the templates by selecting the word item
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/2f37e176-43de-450f-b33f-f8199960893a" width="100%">
 
-#
+<br>
 
 4. Select Create item to create item
 
 <img src="https://github.com/lersakk/ZabbixUserManual/assets/136166133/2b1f4db5-6133-4dea-afdf-7512f9e4667f" width="100%">
 
-#
+<br>
 
 5. Set a name, set a key, and set various settings as desired and press Add
 
