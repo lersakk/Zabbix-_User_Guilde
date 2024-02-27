@@ -67,12 +67,12 @@ __***Recommend granting permissions as needed. chmod 744__
 
 __Step 6 : Finally, perform the Install curl at CONTAINER zabbix-server__
 
-___Command On Local:___
+___Command on Local:___
 ~~~
 sudo docker exec -u root -ti {CONTAINER ID zabbix-server } bash
 ~~~
 
-___Command On Container:___
+___Command on Container:___
 ~~~
 apt-get update
 apt install curl
